@@ -20,8 +20,30 @@ body{
 	bottom: 0;
 }
 
-@media only screen and (max-width:800px){
+/* For devies 480px and lower:
+ */
+@media only screen and (max-width:760px){
 	.home-image{
+		content:url("images/home-img480px.png");
+		width:100%;
+	}
+}
+
+/* For large screens (1300px+)
+ */
+@media only screen and (min-width:1300px){
+	.home-image{
+		content:url("images/home-img-large.png");
+		width:100%;
+	}
+}
+
+/* For phone screen sizes (<480px)
+ */
+@media only screen and (max-width:480px){
+	.home-image{
+		content:url("images/home-img-small.png");
+		width:100%;
 	}
 }
 
