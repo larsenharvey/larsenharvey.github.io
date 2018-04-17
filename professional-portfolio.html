@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Portfolio</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+<body>
+<div class="container">
+		<section class="header">
+			<p class="big-header">Professional</p>
+			<p class="big-header2">Portfolio</p>
+			<nav>
+				<a href="index.html" onmouseover="hoverHome(this)" 
+					onmouseout="mouseOff(this)">Home</a>
+				<a href="portfolio.html" onmouseover="hoverPortfolio(this)" 
+					onmouseout="mouseOff(this)" class="currentPg">Portfolio</a>
+				<a href="about.html" onmouseover="hoverAbout(this)"
+					onmouseout="mouseOff(this)">About</a>
+				<a href="contact.html" onmouseover="hoverContact(this)"
+					onmouseout="mouseOff(this)">Contact</a>
+			</nav>
+		</section>
+
+
+		<p id="hover-text">
+			HOVER OVER IMAGE TO UNCOVER
+		</p>
+
+
+			<div id="img-caption-app">
+			<b><p>SUMMER 2017</p></b>
+			<p>This is the login screen for a mobile app I designed for a client who wanted a timecard application. Users could clock in and clock out using their phones with this app. The app is written in Nativescript, which allows the framework to be written once and deployed for both iOS and Android. I designed all of the layout, but I also developed several features of this application including making a working sidebar, giving password prompts, and creating an interactive user interface.</p>
+			</div>
+			<div id="portfolio-img-app">
+			<img src="app1.png" onmouseover="this.style.opacity=0.6; showDescApp()" 
+				onmouseout="this.style.opacity=1">
+			</div>
+
+			<div id="img-caption-wordpress">
+			<b><p>JULY 2017</p></b>
+				<p>This is a Wordpress website I created and designed for a client who wanted a modern upgrade from his previous website. The author wanted a place for customers and fans to find out about his recent events and book releases.</p>
+			</div>
+			<div id="portfolio-img-wide">
+				<img src="wordpress.jpg" onmouseover="this.style.opacity=0.6; showDescWordpress()"
+					onmouseout="this.style.opacity=1">
+			</div>
+
+			<script>
+				var desc = document.getElementById("img-caption-app");
+				var hoverText = document.getElementById("hover-text");
+				function showDescApp() {
+					desc.style.display = "block";
+					hoverText.style.opacity = 0;
+				}
+
+				var desc2 = document.getElementById("img-caption-wordpress");
+				function showDescWordpress() {
+					desc2.style.display = "block"
+					hoverText.style.opacity = 0;
+				}
+
+				function removeDescription() {
+					desc.style.display = "none";
+				}
+
+				function hoverHome(link) {
+					link.style.backgroundColor = "#ff9999";
+				}
+
+				function hoverPortfolio(link) {
+					link.style.backgroundColor = "#ccddff";
+				}
+
+				function hoverContact(link) {
+					link.style.backgroundColor = "#ffcc99";
+				}
+
+				function hoverAbout(link) {
+					link.style.backgroundColor = "#b3e6cc";
+				}
+
+				function mouseOff(link) {
+					link.style.backgroundColor = "#f2f2f2";
+				}
+			</script>
+		</div>
+
+
+		<footer>
+			<p>Site created and designed by Larsen Harvey</p>
+		</footer>
+</body>
+</html>

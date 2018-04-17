@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Contact</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+	<div class="container">
+		<section class="content-left">
+			<p class="big-header">Contact</p>
+
+
+
+			<nav>
+				<div>
+				<a href="index.html" onmouseover="hoverHome(this)" 
+					onmouseout="mouseOff(this)">Home</a>
+				<a href="portfolio.html" onmouseover="hoverPortfolio(this)" 
+					onmouseout="mouseOff(this)">Portfolio</a>
+				<a href="about.html" onmouseover="hoverAbout(this)"
+					onmouseout="mouseOff(this)">About</a>
+				<a href="contact.html" onmouseover="hoverContact(this)"
+					onmouseout="mouseOff(this)" class="currentPg">Contact</a>
+				</div>
+			</nav>
+		</section>
+		</div>
+
+		<div class="content-right-contact">
+			<div class="div-contact-images">
+				<a href="mailto:larsen.harvey@gmail.com" target="_blank" alt="My email: larsen.harvey@gmail.com">
+					<img src="email.png" class="contact-img" id="mail" 
+					onmouseover="blurOthersButMail()" onmouseout="removeBlurs()"></img>
+				</a>
+
+				<a href="https://github.com/larsenharvey" target="_blank" alt="Github: github.com/larsenharvey">
+					<img src="github.png" class="contact-img" id="github"
+					onmouseover="blurOthersButGithub()" onmouseout="removeBlurs()"></img>
+				</a>
+
+				<a href="https://linkedin.com/in/larsenharvey" target="_blank" 
+					alt="linkedIn: linkedin.com/in/larsenharvey">
+					<img src="linkedin.png" class="contact-img" id="linkedin"
+					onmouseover="blurOthersButLinkedIn()" onmouseout="removeBlurs()"></img>
+				</a>
+				
+				<a href="https://angel.co/larsenharvey" target="_blank" alt="angellist: angel.co/larsenharvey">
+					<img src="angellist.png" class="contact-img" id="angellist"
+					onmouseover="blurOthersButAngellist()" onmouseout="removeBlurs()"></img>
+				</a>
+			</div>
+
+		</div>
+
+		<script>
+			var mail = document.getElementById("mail");
+			var github = document.getElementById("github");
+			var linkedin = document.getElementById("linkedin");
+			var angellist = document.getElementById("angellist");
+
+			function blurOthersButMail() {
+				github.classList.add("blur");
+				linkedin.classList.add("blur");
+				angellist.classList.add("blur");
+			}
+
+			function blurOthersButGithub() {
+				mail.classList.add("blur");
+				linkedin.classList.add("blur");
+				angellist.classList.add("blur");
+			}
+
+			function blurOthersButLinkedIn() {
+				mail.classList.add("blur");
+				github.classList.add("blur");
+				angellist.classList.add("blur");
+			}
+
+			function blurOthersButAngellist() {
+				mail.classList.add("blur");
+				github.classList.add("blur");
+				linkedin.classList.add("blur");
+			}
+
+			function removeBlurs() {
+				mail.classList.remove("blur");
+				github.classList.remove("blur");
+				linkedin.classList.remove("blur");
+				angellist.classList.remove("blur");
+			}
+
+				function hoverHome(link) {
+					link.style.backgroundColor = "#ff9999";
+				}
+
+				function hoverPortfolio(link) {
+					link.style.backgroundColor = "#ccddff";
+				}
+
+				function hoverContact(link) {
+					link.style.backgroundColor = "#ffcc99";
+				}
+
+				function hoverAbout(link) {
+					link.style.backgroundColor = "#b3e6cc";
+				}
+
+				function mouseOff(link) {
+					link.style.backgroundColor = "#f2f2f2";
+				}
+
+		</script>
+
+		<footer>
+				<p>Site created and designed by Larsen Harvey</p>
+			</footer>
+	</body>
+
+
+</html>

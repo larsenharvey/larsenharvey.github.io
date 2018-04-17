@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" 
+			name="viewport" content="width=device-width"/>
+		<title>Larsen Harvey's Site</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			
+			
+			<section class="content-left">
+				<p class="home-header1">Larsen Harvey's</p>
+				<p class="home-header2">Portfolio Website</p>
+
+				<nav>
+				<a href="index.html" onmouseover="hoverHome(this)" 
+					onmouseout="mouseOff(this)" class="currentPg">Home</a>
+				<a href="portfolio.html" onmouseover="hoverPortfolio(this)" 
+					onmouseout="mouseOff(this)">Portfolio</a>
+				<a href="about.html" onmouseover="hoverAbout(this)"
+					onmouseout="mouseOff(this)">About</a>
+				<a href="contact.html" onmouseover="hoverContact(this)"
+					onmouseout="mouseOff(this)">Contact</a>
+				</nav>
+
+				
+
+			</section><!-- end of main-content section-->
+			<div class="home-image">
+				<img src="buildings2.png"></img>
+			</div>
+		
+
+		</div> <!--end container div-->	
+
+
+		<script>
+				function hoverHome(link) {
+					link.style.backgroundColor = "#ff9999";
+				}
+
+				function hoverPortfolio(link) {
+					link.style.backgroundColor = "#ccddff";
+				}
+
+				function hoverContact(link) {
+					link.style.backgroundColor = "#ffcc99";
+				}
+
+				function hoverAbout(link) {
+					link.style.backgroundColor = "#b3e6cc";
+				}
+
+				function mouseOff(link) {
+					link.style.backgroundColor = "#f2f2f2";
+				}
+
+		</script>
+	</body>
+</html>

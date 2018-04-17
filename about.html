@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>About</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+	<div class="container">
+		<section class="header">
+			<p class="big-header">About Me</p>
+			<nav>
+				<a href="index.html" onmouseover="hoverHome(this)" 
+					onmouseout="mouseOff(this)">Home</a>
+				<a href="portfolio.html" onmouseover="hoverPortfolio(this)" 
+					onmouseout="mouseOff(this)">Portfolio</a>
+				<a href="aboutMe.html" onmouseover="hoverAbout(this)"
+					onmouseout="mouseOff(this)"class="currentPg">About</a>
+				<a href="contact.html" onmouseover="hoverContact(this)"
+					onmouseout="mouseOff(this)">Contact</a>
+			</nav>
+		</section>
+
+		<img src="me.jpg" id="profile-img"/>
+
+			<section>
+				<p class="about-body">I am a current Sophomore at Augustana College in Rock Island, Illinois. I am majoring in both Computer Science and Graphic Design. Currently I am seeking web design internships, but I am also interested in any position that deals with aspects of code and design. I'm from Grayslake, Illinois and am seeking summer internships in the Chicagoland area.</p>
+
+				<p class="skills"><b>My programming skills include:</b></p>
+				<ul>
+					<li>HTML/CSS</li>
+					<li>Javascript</li>
+					<li>C++</li>
+					<li>Java</li>
+					<li>AngularJS</li>
+					<li>Nativescript</li>
+				</ul>
+
+				<p class="skills"><b>My design software skillset includes:</b></p>
+				<ul>
+					<li>Photoshop</li>
+					<li>Illustrator</li>
+					<li>InDesign</li>
+					<li>Microsoft Office Suite</li>
+				</ul>
+			</section>
+		</div>
+
+		<footer>
+				<p>Site created and designed by Larsen Harvey</p>
+			</footer>
+
+			<script>
+				function hoverHome(link) {
+					link.style.backgroundColor = "#ff9999";
+				}
+
+				function hoverPortfolio(link) {
+					link.style.backgroundColor = "#ccddff";
+				}
+
+				function hoverContact(link) {
+					link.style.backgroundColor = "#ffcc99";
+				}
+
+				function hoverAbout(link) {
+					link.style.backgroundColor = "#b3e6cc";
+				}
+
+				function mouseOff(link) {
+					link.style.backgroundColor = "#f2f2f2";
+				}
+			</script>
+	</body>
+
+
+</html>

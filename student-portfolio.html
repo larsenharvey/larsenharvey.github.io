@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Portfolio</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+<body>
+<div class="container">
+		<section class="header">
+			<p class="big-header">Student</p>
+			<p class="big-header2">Portfolio</p>
+			<nav>
+				<a href="index.html" onmouseover="hoverHome(this)" 
+					onmouseout="mouseOff(this)">Home</a>
+				<a href="portfolio.html" onmouseover="hoverPortfolio(this)" 
+					onmouseout="mouseOff(this)" class="currentPg">Portfolio</a>
+				<a href="about.html" onmouseover="hoverAbout(this)"
+					onmouseout="mouseOff(this)">About</a>
+				<a href="contact.html" onmouseover="hoverContact(this)"
+					onmouseout="mouseOff(this)">Contact</a>
+			</nav>
+		</section>
+
+		<div id="hover-text">
+		<p>
+			HOVER OVER IMAGE TO UNCOVER
+		</p>
+	</div>
+
+		<div id="img-caption1">
+			<b><p>OCTOBER 2017</p></b>
+			<p>This poster is from an intro graphic design course where the objective was to take a well known shape (I chose a cherry) and translate it 16 times into various other objects and designs. </p>
+		</div>
+		<div id="portfolio-img1">
+			<img src="poster-cherry.jpg" onmouseover="this.style.opacity=0.6; showDesc1()" 
+				onmouseout="this.style.opacity=1">
+		</div>
+
+		<div id="img-caption2">
+			<b><p>JANUARY 2018</p></b>
+			<p>This is a photograph I took for a digital photography class where the guidelines given were to "make something out of nothing", ie. the "alchemy" assignment. 
+			</p>
+		</div>
+		<div id="portfolio-img2">
+			<img src="photo.jpg" onmouseover="this.style.opacity=0.6; showDesc2()" 
+				onmouseout="this.style.opacity=1">
+		</div>
+
+
+			<script>
+				var desc = document.getElementById("img-caption1");
+				var hoverText = document.getElementById("hover-text");
+
+				function showDesc1() {
+					desc.style.display = "block";
+					hoverText.style.opacity = 0;
+				}
+
+				var desc2 = document.getElementById("img-caption2");
+				function showDesc2() {
+					desc2.style.display = "block"
+					hoverText.style.opacity = 0;
+
+				}
+
+				function removeDescription() {
+					desc.style.display = "none";
+				}
+
+				function hoverHome(link) {
+					link.style.backgroundColor = "#ff9999";
+				}
+
+				function hoverPortfolio(link) {
+					link.style.backgroundColor = "#ccddff";
+				}
+
+				function hoverContact(link) {
+					link.style.backgroundColor = "#ffcc99";
+				}
+
+				function hoverAbout(link) {
+					link.style.backgroundColor = "#b3e6cc";
+				}
+
+				function mouseOff(link) {
+					link.style.backgroundColor = "#f2f2f2";
+				}
+			</script>
+		</div>
+
+		<footer>
+			<p>Site created and designed by Larsen Harvey</p>
+		</footer>
+</body>
+</html>

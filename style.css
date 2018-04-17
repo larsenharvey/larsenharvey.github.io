@@ -1,0 +1,341 @@
+body{
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:17px;
+	margin:0;
+	padding:0;
+	color:#262626;
+	background-color: #f2f2f2;
+}
+
+.container{
+	margin:0 auto;
+	width:100%;
+	background-color: #f2f2f2;
+	margin:0 auto;
+	max-width:1800px;
+}
+
+.home-image{
+	position: fixed;
+	bottom: 0;
+}
+
+@media only screen and (max-width:800px){
+	.home-image{
+	}
+}
+
+nav {
+	font-size:22;
+	height:50px;
+	width:42%;
+	line-height:45px;
+	margin-top:10%;
+}
+
+a {
+	text-decoration:none;
+
+}
+nav a{
+	color:#262626;
+	padding:3% 7% 3% 20%;
+}
+
+.currentPg{
+	font-weight:bold;
+}
+
+.content-left{
+	position:relative;
+	float:left;
+	width:50%;
+}
+
+.home-header1{
+	font-family:Century, Georgia, sans;
+	font-size:32;
+	font-weight:bolder;
+	padding:0;
+	margin:0;
+	margin-left:8%;
+	margin-top:10%;
+}
+
+.home-header2{
+	font-family:Century, Georgia, sans;
+	font-size:32;
+	font-weight:bolder;
+	padding:0;
+	margin:0;
+	margin-left:8%;
+	margin-top:2%;
+}
+
+.header1{
+	font-family:Century, Georgia, sans;
+	font-size:32;
+	font-weight:bolder;
+	padding:0;
+	margin:0;
+	margin-left:8%;
+	margin-top:5%;
+	margin-left:4%;
+}
+
+.two-line-header1{
+	font-family:Century, Georgia, sans;
+	font-size:32;
+	font-weight:bolder;
+	padding:0;
+	margin:0;
+	margin-left:8%;
+	margin-top:5%;
+}
+
+.two-line-header2{
+	font-family:Century, Georgia, sans;
+	font-size:32;
+	font-weight:bolder;
+	padding:0;
+	margin:0;
+	margin-left:8%;
+	margin-top:1%;
+}
+
+.content-right{
+	position:relative;
+	float:right;
+	width:50%;
+}
+
+.content-right-contact{
+	margin-top:5%;
+	position:relative;
+	float:right;
+	width:50%;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+.contact-img{
+	width:35%;
+	padding:5%;
+}
+
+/*
+ * portfolio.html
+ */
+
+.big-header{
+	font-family:Century, Georgia, sans;
+	font-size:48;
+	font-weight:bolder;
+	margin-top:10%;
+	margin-left:8%;
+	margin-bottom:10%;
+}
+
+.big-header2{
+	font-family:Century, Georgia, sans;
+	font-size:48;
+	font-weight:bolder;
+	line-height:10px;
+	margin-left:8%;
+	margin-bottom:10%;
+}
+
+.header{
+	width:50%;
+	position:relative;
+}
+
+
+.student-work{
+	position:relative;
+	margin-top:200px;
+	float:block;
+	line-height:140px;
+	background-color:#00cccc;
+	width:100%;
+	text-align:center;
+}
+
+.prof-work{
+	position:relative;
+	float:block;
+	line-height:140px;
+	background-color:#ff8566;
+	width:100%;
+	text-align:center;
+}
+
+a.s{
+	font-family:Century, Georgia, sans;
+	font-size:32;
+	color:white;
+	overflow:auto;
+	padding:4% 35% 4% 35%;
+}
+
+a.p{
+	font-family:Century, Georgia, sans;
+	font-size:32;
+	color:white;
+	overflow:auto;
+	padding:4% 30% 4% 30%;
+
+}
+
+
+/*
+ * 
+ */
+
+/*
+ * student-portfolio.html
+ */
+
+ #hover-text{
+ 	width:40%;
+ 	font-size:18;
+ 	margin-left:55%;
+ 	position:fixed;
+ 	color:#cccccc;
+ }
+
+#img-caption1{
+	margin-top:20%;
+	float:right;
+	width:35%;
+	padding:5%;
+	margin-right:5%;
+	text-align:justify;
+	display:none;
+}
+
+#img-caption2{
+	margin-top:2%;
+	float:right;
+	width:35%;
+	padding:5%;
+	margin-right:5%;
+	text-align:justify;
+	display:none;
+}
+
+#portfolio-img1{
+	position:relative;
+	width:40%;
+	margin-top:150px;
+	float:block;
+	padding:5%;
+}
+
+#portfolio-img2{
+	position:relative;
+	width:40%;
+	float:block;
+	padding:5%;
+}
+
+
+/*
+ *
+ */
+
+/*
+ * professional-portfolio.html
+ */
+
+#portfolio-img-app{
+	width:40%;
+	margin-top:150px;
+	float:block;
+	padding:5%;
+}
+
+#portfolio-img-wide{
+	width:50%;
+	margin-top:0%;
+	float:block;
+	padding:5%;
+}
+
+#img-caption-app{
+	margin-top:270px;
+	float:right;
+	width:35%;
+	padding:5%;
+	margin-right:5%;
+	text-align:justify;
+	display:none;
+}
+
+#img-caption-wordpress{
+	margin-top:50px;
+	float:right;
+	width:25%;
+	padding:5%;
+	margin-right:5%;
+	text-align:justify;
+	display:none;
+}
+
+/*
+ *
+ */
+
+ /*
+  * about.html
+  */
+.about-body{
+	margin-top:150px;
+	margin-bottom:40px;
+	padding:0% 10% 0% 10%;
+	text-align:justify;
+	position:relative;
+	float:block;
+}
+
+#profile-img{
+	width:20%;
+	float:right;
+	padding:5%;
+}
+
+.skills{
+	margin-left:14%;
+}
+
+li{
+	margin-left:14%;
+}
+
+.blur{
+	webkit-filter: blur(2px); /* Chrome, Safari, Opera */
+    filter: blur(2px);
+}
+
+footer{
+	margin-top:30%;
+	font-size:14;
+	text-align:center;
+	width:100%;
+	position:relative;
+	float:left;
+}
+
+.footer-left{
+	float:left;
+	padding:0;
+	margin:0;
+}
+
+.footer-right{
+	float:right;
+	padding:20px 20px 10px 0px;
+}
