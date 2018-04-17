@@ -20,37 +20,88 @@ body{
 	bottom: 0;
 }
 
-/* For devies 480px and lower:
- */
+/* For devies 760px and lower: */
 @media only screen and (max-width:760px){
 	.home-image{
 		content:url("images/home-img480px.png");
 		width:100%;
 	}
+
+	#profile-img{
+		width:40%;
+		margin-top:15%;
+		float:right;
+		padding:5%;
+		border-radius:15%;
+	}
 }
 
-/* For large screens (1300px+)
- */
+/* For screen sizes 760px - 1300px*/
+@media only screen and (min-width:761px){
+	.home-image{
+		content:url("images/home-img.png");
+		width:100%;
+	}
+
+	#profile-img{
+		width:30%;
+		margin-top:5%;
+		float:right;
+		padding:5%;
+		border-radius:15%;
+	}
+
+}
+
+/* For large screens (1300px+) */
 @media only screen and (min-width:1300px){
 	.home-image{
 		content:url("images/home-img-large.png");
 		width:100%;
 	}
+
+	#profile-img{
+		width:20%;
+		margin-top:2%;
+		float:right;
+		padding:5%;
+		border-radius:15%;
+	}
+
+	.header{
+		margin-top:-3%;
+	}
 }
 
-/* For phone screen sizes (<480px)
- */
+/* For phone screen sizes (<480px) */
 @media only screen and (max-width:480px){
 	.home-image{
 		content:url("images/home-img-small.png");
 		width:100%;
+	}
+
+	nav a{
+		font-size:34px;
+		padding:3% 7% 3% 50%;
+	}
+
+	#profile-img{
+		width:40%;
+		margin-top:40%;
+		float:right;
+		padding:5%;
+		border-radius:15%;
+	}
+
+	.contact-img{
+		margin-top:20%;
 	}
 }
 
 nav {
 	font-size:22;
 	height:50px;
-	width:42%;
+	width:40%;
 	line-height:45px;
 	margin-top:10%;
 }
@@ -66,12 +117,6 @@ nav a{
 
 .currentPg{
 	font-weight:bold;
-}
-
-.content-left{
-	position:relative;
-	float:left;
-	width:50%;
 }
 
 .home-header1{
@@ -131,11 +176,11 @@ nav a{
 	width:50%;
 }
 
-.content-right-contact{
-	margin-top:5%;
+.contact-content{
+	margin-top:24%;
 	position:relative;
-	float:right;
-	width:50%;
+	width:100%;
+	padding:0% 0% 0% 10%;
 }
 
 img{
@@ -144,13 +189,11 @@ img{
 }
 
 .contact-img{
-	width:35%;
+	width:25%;
 	padding:5%;
 }
 
-/*
- * portfolio.html
- */
+/* portfolio.html */
 
 .big-header{
 	font-family:Century, Georgia, sans;
@@ -213,13 +256,9 @@ a.p{
 }
 
 
-/*
- * 
- */
+/* * */
 
-/*
- * student-portfolio.html
- */
+/* student-portfolio.html */
 
  #hover-text{
  	width:40%;
@@ -265,13 +304,9 @@ a.p{
 }
 
 
-/*
- *
- */
+/* * */
 
-/*
- * professional-portfolio.html
- */
+/* professional-portfolio.html */
 
 #portfolio-img-app{
 	width:40%;
@@ -307,13 +342,9 @@ a.p{
 	display:none;
 }
 
-/*
- *
- */
+/* * */
 
- /*
-  * about.html
-  */
+ /* about.html */
 .about-body{
 	margin-top:150px;
 	margin-bottom:40px;
@@ -321,12 +352,6 @@ a.p{
 	text-align:justify;
 	position:relative;
 	float:block;
-}
-
-#profile-img{
-	width:20%;
-	float:right;
-	padding:5%;
 }
 
 .skills{
