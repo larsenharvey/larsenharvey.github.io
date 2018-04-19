@@ -16,8 +16,8 @@ body{
 }
 
 .home-image{
-	position: fixed;
 	bottom: 0;
+	position:fixed;
 }
 
 /* iPhone X */
@@ -137,6 +137,27 @@ body{
 
 }
 
+
+/* For medium-large screens (~1000px) */
+@media only screen and (min-width:1000px){
+	.home-image{
+		content:url("images/home-img-large.png");
+		width:100%;
+	}
+
+	#profile-img{
+		width:20%;
+		margin-top:2%;
+		float:right;
+		padding:5%;
+		border-radius:20%;
+	}
+
+	.header{
+		margin-top:-3%;
+	}
+}
+
 /* For large screens (1300px+) */
 @media only screen and (min-width:1300px){
 	.home-image{
@@ -149,7 +170,7 @@ body{
 		margin-top:2%;
 		float:right;
 		padding:5%;
-		border-radius:15%;
+		border-radius:20%;
 	}
 
 	.header{
@@ -268,7 +289,8 @@ nav a{
 }
 
 img{
-	width:100%;
+	width:auto;
+	max-width:100%;
 	height:auto;
 }
 
@@ -345,24 +367,23 @@ a.p{
 /* student-portfolio.html */
 
  #hover-text{
- 	width:40%;
+ 	margin-left:60%;
  	font-size:18;
- 	margin-left:55%;
  	position:fixed;
  	color:#cccccc;
  }
 
-#img-caption1{
-	margin-top:20%;
+ #img-caption-logo{
+ 	margin-top:20%;
 	float:right;
 	width:35%;
 	padding:5%;
 	margin-right:5%;
 	text-align:justify;
 	display:none;
-}
+ }
 
-#img-caption2{
+#img-caption-cherry{
 	margin-top:2%;
 	float:right;
 	width:35%;
@@ -372,7 +393,17 @@ a.p{
 	display:none;
 }
 
-#portfolio-img1{
+#img-caption-photo{
+	margin-top:2%;
+	float:right;
+	width:35%;
+	padding:5%;
+	margin-right:5%;
+	text-align:justify;
+	display:none;
+}
+
+#portfolio-img-logo{
 	position:relative;
 	width:40%;
 	margin-top:150px;
@@ -380,13 +411,27 @@ a.p{
 	padding:5%;
 }
 
-#portfolio-img2{
+#portfolio-img-logo2{
+	position:relative;
+	width:40%;
+	margin-top:0px;
+	float:block;
+	padding:5%;
+}
+
+#portfolio-img-cherry{
 	position:relative;
 	width:40%;
 	float:block;
 	padding:5%;
 }
 
+#portfolio-img-photo{
+	position:relative;
+	width:40%;
+	float:block;
+	padding:5%;
+}
 
 /* * */
 
@@ -416,7 +461,30 @@ a.p{
 	display:none;
 }
 
+#swedish-game-link{
+	padding:0%;
+	margin:0%;
+}
+
 #img-caption-wordpress{
+	margin-top:50px;
+	float:right;
+	width:25%;
+	padding:5%;
+	margin-right:5%;
+	text-align:justify;
+	display:none;
+}
+
+#img-caption-swedish-game{
+	float:right;
+	width:25%;
+	margin-right:5%;
+	text-align:justify;
+	display:none;
+}
+
+#img-caption-swedish-game{
 	margin-top:50px;
 	float:right;
 	width:25%;
@@ -458,6 +526,7 @@ footer{
 	width:100%;
 	position:relative;
 	float:left;
+	bottom:0;
 }
 
 .footer-left{

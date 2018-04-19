@@ -45,20 +45,34 @@
 					onmouseout="this.style.opacity=1">
 			</div>
 
+			<div id="img-caption-swedish-game">
+			<b><p>OCTOBER 2017</p></b>
+				<p>This is a game I designed and developed for the Swenson Swedish Immigration Center in Rock Island, Illinois. I designed several layouts for this game as well as other screens like inventory, settings, credits, and a login screen. The backend code for this game can be found </p><a href="https://github.com/larsenharvey/DowitcherRepo" id="swedish-game-link">here.</a>
+			</div>
+			<div id="portfolio-img-wide">
+				<img src="images/swedishGame.jpg" onmouseover="this.style.opacity=0.6; showDescSwedishGame()"
+					onmouseout="this.style.opacity=1">
+			</div>
+
 			<script>
-				var desc = document.getElementById("img-caption-app");
+				var descApp = document.getElementById("img-caption-app");
 				var hoverText = document.getElementById("hover-text");
 				function showDescApp() {
-					desc.style.display = "block";
+					descApp.style.display = "block";
 					hoverText.style.opacity = 0;
 				}
 
-				var desc2 = document.getElementById("img-caption-wordpress");
+				var descWP = document.getElementById("img-caption-wordpress");
 				function showDescWordpress() {
-					desc2.style.display = "block"
+					descWP.style.display = "block"
 					hoverText.style.opacity = 0;
 				}
 
+				var descSG = document.getElementById("img-caption-swedish-game");
+				function showDescSwedishGame() {
+					descSG.style.display = "block"
+					hoverText.style.opacity = 0;
+				}
 				function removeDescription() {
 					desc.style.display = "none";
 				}

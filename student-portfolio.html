@@ -27,39 +27,58 @@
 		</p>
 	</div>
 
-		<div id="img-caption1">
-			<b><p>OCTOBER 2017</p></b>
-			<p>This poster is from an intro graphic design course where the objective was to take a well known shape (I chose a cherry) and translate it 16 times into various other objects and designs. </p>
+		<div id="img-caption-logo">
+			<b><p>MARCH/APRIL 2018</p></b>
+			<p>These logos are from practicing with two different type faces to create a working and clean design that activates negative space. </p>
 		</div>
-		<div id="portfolio-img1">
-			<img src="images/poster-cherry.jpg" onmouseover="this.style.opacity=0.6; showDesc1()" 
+		<div id="portfolio-img-logo">
+			<img src="images/logo1.png" onmouseover="this.style.opacity=0.6; showDescLogo()" 
 				onmouseout="this.style.opacity=1">
 		</div>
 
-		<div id="img-caption2">
+		<div id="portfolio-img-logo2">
+			<img src="images/logo2.png" onmouseover="this.style.opacity=0.6; showDescLogo()" 
+				onmouseout="this.style.opacity=1">
+		</div>
+
+		<div id="img-caption-cherry">
+			<b><p>OCTOBER 2017</p></b>
+			<p>This poster is from an intro graphic design course where the objective was to take a well known shape (I chose a cherry) and translate it 16 times into various other objects and designs. </p>
+		</div>
+		<div id="portfolio-img-cherry">
+			<img src="images/poster-cherry.jpg" onmouseover="this.style.opacity=0.6; showDescCherry()" 
+				onmouseout="this.style.opacity=1">
+		</div>
+
+		<div id="img-caption-photo">
 			<b><p>JANUARY 2018</p></b>
 			<p>This is a photograph I took for a digital photography class where the guidelines given were to "make something out of nothing", ie. the "alchemy" assignment. 
 			</p>
 		</div>
-		<div id="portfolio-img2">
-			<img src="images/photo.jpg" onmouseover="this.style.opacity=0.6; showDesc2()" 
+		<div id="portfolio-img-photo">
+			<img src="images/photo.jpg" onmouseover="this.style.opacity=0.6; showDescPhoto()" 
 				onmouseout="this.style.opacity=1">
 		</div>
 
 			<script>
-				var desc = document.getElementById("img-caption1");
 				var hoverText = document.getElementById("hover-text");
 
-				function showDesc1() {
-					desc.style.display = "block";
+				var descLogo1 = document.getElementById("img-caption-logo");
+				function showDescLogo() {
+					descLogo1.style.display = "block";
 					hoverText.style.opacity = 0;
 				}
 
-				var desc2 = document.getElementById("img-caption2");
-				function showDesc2() {
-					desc2.style.display = "block"
+				var descCherry = document.getElementById("img-caption-cherry");
+				function showDescCherry() {
+					descCherry.style.display = "block"
 					hoverText.style.opacity = 0;
+				}
 
+				var descPhoto = document.getElementById("img-caption-photo");
+				function showDescPhoto() {
+					descPhoto.style.display = "block"
+					hoverText.style.opacity = 0;
 				}
 
 				function removeDescription() {
