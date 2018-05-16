@@ -5,6 +5,9 @@ body{
 	padding:0;
 	color:#262626;
 	background-color: #f2f2f2;
+	background-image: url(images/home-img.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
 }
 
 .container{
@@ -25,8 +28,8 @@ body{
     and (device-width : 375px) 
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) { 
-		.home-image{
-			content:url("images/home-img-small.png");
+		body{
+			background-image: url(images/home-img-small.png);
 			width:100%;
 		}
 
@@ -53,8 +56,8 @@ body{
     and (device-width : 375px) 
     and (device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2) { 
-		.home-image{
-			content:url("images/home-img-small.png");
+		body{
+			background-image: url(images/home-img-small.png);
 			width:100%;
 		}
 
@@ -81,8 +84,8 @@ body{
     and (device-width : 414px) 
     and (device-height : 736px) 
     and (-webkit-device-pixel-ratio : 3) { 
-		.home-image{
-			content:url("images/home-img-small.png");
+		body{
+			background-image: url(images/home-img-small.png);
 			width:100%;
 		}
 
@@ -106,8 +109,8 @@ body{
 
 /* For devies 760px and lower: */
 @media only screen and (max-width:760px){
-	.home-image{
-		content:url("images/home-img480px.png");
+	body{
+		background-image: url(images/home-img480px.png);
 		width:100%;
 	}
 
@@ -122,8 +125,8 @@ body{
 
 /* For screen sizes 760px - 1300px*/
 @media only screen and (min-width:761px){
-	.home-image{
-		content:url("images/home-img.png");
+	body{
+		background-image: url(images/home-img.png);
 		width:100%;
 	}
 
@@ -140,8 +143,8 @@ body{
 
 /* For medium-large screens (~1000px) */
 @media only screen and (min-width:1000px){
-	.home-image{
-		content:url("images/home-img-large.png");
+	body{
+		background-image: url(images/home-img-large.png);
 		width:100%;
 	}
 
@@ -160,8 +163,8 @@ body{
 
 /* For large screens (1300px+) */
 @media only screen and (min-width:1300px){
-	.home-image{
-		content:url("images/home-img-large.png");
+	body{
+		background-image: url(images/home-img-large.png);
 		width:100%;
 	}
 
@@ -180,8 +183,8 @@ body{
 
 /* For phone screen sizes (<480px) */
 @media only screen and (max-width:480px){
-	.home-image{
-		content:url("images/home-img-small.png");
+	body{
+		background-image: url(images/home-img-small.png);
 		width:100%;
 	}
 
