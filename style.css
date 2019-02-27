@@ -1,217 +1,45 @@
 body{
-	font-family:Verdana, Helvetica, sans-serif;
+	font-family:Avenir, Helvetica, sans-serif;
 	font-size:17px;
 	margin:0;
 	padding:0;
 	color:#262626;
 	background-color: #f2f2f2;
-	background-image: url(images/home-img.png);
+	/*background-image: url(images/home-img.png);
 	background-position: left bottom;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+}
+
+#header-logo{
+	width:100px;
+	height:100px;
+	padding:1%;
+	float:left;
+}
+
+.header-logo-div{
+	top:15px;
+	left:15px;
+	position:absolute;
+	opacity:0.9;
+}
+
+#home-footer{
+	position:absolute;
+	bottom:0;
 }
 
 .container{
 	margin:0 auto;
 	width:100%;
-	background-color: #f2f2f2;
-	margin:0 auto;
 	max-width:1800px;
-}
-
-.home-image{
-	bottom: 0;
-	position:fixed;
-}
-
-/* iPhone X */
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-		body{
-			background-image: url(images/home-img-small.png);
-			width:100%;
-		}
-
-		nav a{
-			font-size:34px;
-			padding:3% 7% 3% 50%;
-		}
-
-		#profile-img{
-			width:40%;
-			margin-top:40%;
-			float:right;
-			padding:5%;
-			border-radius:15%;
-		}
-
-		.contact-img{
-			margin-top:20%;
-		}
-    }
-
-/* iPhone 8 */
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 667px) 
-    and (-webkit-device-pixel-ratio : 2) { 
-		body{
-			background-image: url(images/home-img-small.png);
-			width:100%;
-		}
-
-		nav a{
-			font-size:34px;
-			padding:3% 7% 3% 50%;
-		}
-
-		#profile-img{
-			width:40%;
-			margin-top:40%;
-			float:right;
-			padding:5%;
-			border-radius:15%;
-		}
-
-		.contact-img{
-			margin-top:20%;
-		}
-    }
-
-/* iPhone 8 Plus */
-@media only screen 
-    and (device-width : 414px) 
-    and (device-height : 736px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-		body{
-			background-image: url(images/home-img-small.png);
-			width:100%;
-		}
-
-		nav a{
-			font-size:34px;
-			padding:3% 7% 3% 50%;
-		}
-
-		#profile-img{
-			width:40%;
-			margin-top:40%;
-			float:right;
-			padding:5%;
-			border-radius:15%;
-		}
-
-		.contact-img{
-			margin-top:20%;
-		}
-    }
-
-/* For devies 760px and lower: */
-@media only screen and (max-width:760px){
-	body{
-		background-image: url(images/home-img480px.png);
-		width:100%;
-	}
-
-	#profile-img{
-		width:40%;
-		margin-top:15%;
-		float:right;
-		padding:5%;
-		border-radius:15%;
-	}
-}
-
-/* For screen sizes 760px - 1300px*/
-@media only screen and (min-width:761px){
-	body{
-		background-image: url(images/home-img.png);
-		width:100%;
-	}
-
-	#profile-img{
-		width:30%;
-		margin-top:5%;
-		float:right;
-		padding:5%;
-		border-radius:15%;
-	}
-
-}
-
-
-/* For medium-large screens (~1000px) */
-@media only screen and (min-width:1000px){
-	body{
-		background-image: url(images/home-img-large.png);
-		width:100%;
-	}
-
-	#profile-img{
-		width:20%;
-		margin-top:2%;
-		float:right;
-		padding:5%;
-		border-radius:20%;
-	}
-
-	.header{
-		margin-top:-3%;
-	}
-}
-
-/* For large screens (1300px+) */
-@media only screen and (min-width:1300px){
-	body{
-		background-image: url(images/home-img-large.png);
-		width:100%;
-	}
-
-	#profile-img{
-		width:20%;
-		margin-top:2%;
-		float:right;
-		padding:5%;
-		border-radius:20%;
-	}
-
-	.header{
-		margin-top:-3%;
-	}
-}
-
-/* For phone screen sizes (<480px) */
-@media only screen and (max-width:480px){
-	body{
-		background-image: url(images/home-img-small.png);
-		width:100%;
-	}
-
-	nav a{
-		font-size:34px;
-		padding:3% 7% 3% 50%;
-	}
-
-	#profile-img{
-		width:40%;
-		margin-top:40%;
-		float:right;
-		padding:5%;
-		border-radius:15%;
-	}
-
-	.contact-img{
-		margin-top:20%;
-	}
+	position:relative;
 }
 
 nav {
 	font-size:22;
-	height:50px;
-	width:40%;
-	line-height:45px;
-	margin-top:10%;
+	margin-top:3%;
+	text-align:center;
 }
 
 a {
@@ -219,76 +47,39 @@ a {
 
 }
 nav a{
+	font-family: "Avenir Next", "Helvetica", sans-serif;
+	border:2px #262626 solid;
+	border-radius:3px;
 	color:#262626;
-	padding:3% 7% 3% 20%;
+	margin-right:4%;
+	padding:0.5% 1% 0.5% 1%;
 }
 
 .currentPg{
-	font-weight:bold;
+	font-weight:600;
+	border:3px #262626 solid;
 }
 
-.home-header1{
-	font-family:Century, Georgia, sans;
-	font-size:32;
-	font-weight:bolder;
-	padding:0;
-	margin:0;
-	margin-left:8%;
-	margin-top:10%;
+.home-title{
+	font-family:"Baskerville", "EB Garamond", serif;
+	font-size:36;
+	font-weight:500;
+	padding-top:2%;
+	text-align:center;
 }
 
-.home-header2{
-	font-family:Century, Georgia, sans;
-	font-size:32;
-	font-weight:bolder;
-	padding:0;
-	margin:0;
-	margin-left:8%;
-	margin-top:2%;
-}
-
-.header1{
-	font-family:Century, Georgia, sans;
-	font-size:32;
-	font-weight:bolder;
-	padding:0;
-	margin:0;
-	margin-left:8%;
-	margin-top:5%;
-	margin-left:4%;
-}
-
-.two-line-header1{
-	font-family:Century, Georgia, sans;
-	font-size:32;
-	font-weight:bolder;
-	padding:0;
-	margin:0;
-	margin-left:8%;
-	margin-top:5%;
-}
-
-.two-line-header2{
-	font-family:Century, Georgia, sans;
-	font-size:32;
-	font-weight:bolder;
-	padding:0;
-	margin:0;
-	margin-left:8%;
-	margin-top:1%;
+.title{
+	font-family:"Baskerville", "EB Garamond", serif;
+	font-size:48;
+	font-weight:500;
+	padding-top:2%;
+	text-align:center;
 }
 
 .content-right{
 	position:relative;
 	float:right;
 	width:50%;
-}
-
-.contact-content{
-	margin-top:24%;
-	position:relative;
-	width:100%;
-	padding:0% 0% 0% 10%;
 }
 
 img{
@@ -298,69 +89,59 @@ img{
 }
 
 .contact-img{
-	width:25%;
+	width:10%;
 	padding:5%;
+}
+
+.div-contact-images{
+	text-align:center;
+}
+
+.div.contact-btn{
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width:120px;
+}
+
+.caption{
+	display:block;
 }
 
 /* portfolio.html */
 
-.big-header{
-	font-family:Century, Georgia, sans;
-	font-size:48;
-	font-weight:bolder;
-	margin-top:10%;
-	margin-left:8%;
-	margin-bottom:10%;
-}
-
-.big-header2{
-	font-family:Century, Georgia, sans;
-	font-size:48;
-	font-weight:bolder;
-	line-height:10px;
-	margin-left:8%;
-	margin-bottom:10%;
-}
-
-.header{
+.split{
 	width:50%;
-	position:relative;
+	padding-top:15%;
+	margin-top:5%;
+	top:0;
+	overflow-x:hidden;
+	min-height:40vh;
 }
 
-
-.student-work{
-	position:relative;
-	margin-top:200px;
-	float:block;
-	line-height:140px;
-	background-color:#00cccc;
-	width:100%;
+.left{
+	float:left;
 	text-align:center;
+	background-color:#d9d9d9;
 }
 
-.prof-work{
-	position:relative;
-	float:block;
-	line-height:140px;
-	background-color:#ff8566;
-	width:100%;
+.right{
+	float:right;
 	text-align:center;
+	background-color:#1a1a1a;
 }
 
 a.s{
-	font-family:Century, Georgia, sans;
+	font-family:"Baskerville", "EB Garamond", serif;
 	font-size:32;
-	color:white;
-	overflow:auto;
-	padding:4% 35% 4% 35%;
+	color:#1a1a1a;
+	vertical-align:middle;
 }
 
 a.p{
-	font-family:Century, Georgia, sans;
+	font-family:"Baskerville", "EB Garamond", serif;
 	font-size:32;
-	color:white;
-	overflow:auto;
-	padding:4% 30% 4% 30%;
+	color:#f2f2f2;
 
 }
 
@@ -368,140 +149,52 @@ a.p{
 /* * */
 
 /* student-portfolio.html */
+.portfolio-img{
+	width:300px;
+	height:300px;
+}
 
- #hover-text{
- 	margin-left:60%;
- 	font-size:18;
- 	position:fixed;
- 	color:#cccccc;
- }
+.smaller {
+	object-fit: contain; width:300px; height:300px;
+}
+.portfolio-img-div{
+	display:inline-block;
+	padding-right:7%;
+	padding-top:7%;
+}
+figcaption{
+	padding-top:2%;
+	text-align:center;
+	color:#262626;
+}
 
- #img-caption-logo{
- 	margin-top:20%;
+.project-image{
+	width:50%;
+	padding-top:3%;
+	padding-right:3%;
 	float:right;
-	width:35%;
-	padding:5%;
-	margin-right:5%;
-	text-align:justify;
-	display:none;
- }
+}
 
-#img-caption-cherry{
+.project-text-div{
+	font-size:24px;
+	width:40%;
+	float:left;
+	margin-left:3%;
 	margin-top:2%;
-	float:right;
-	width:35%;
-	padding:5%;
-	margin-right:5%;
-	text-align:justify;
-	display:none;
-}
-
-#img-caption-photo{
-	margin-top:2%;
-	float:right;
-	width:35%;
-	padding:5%;
-	margin-right:5%;
-	text-align:justify;
-	display:none;
-}
-
-#portfolio-img-logo{
-	position:relative;
-	width:40%;
-	margin-top:150px;
-	float:block;
-	padding:5%;
-}
-
-#portfolio-img-logo2{
-	position:relative;
-	width:33%;
-	margin-top:0px;
-	float:block;
-	padding:5%;
-}
-
-#portfolio-img-cherry{
-	position:relative;
-	width:40%;
-	float:block;
-	padding:5%;
-}
-
-#portfolio-img-photo{
-	position:relative;
-	width:40%;
-	float:block;
-	padding:5%;
+	position:fixed;
 }
 
 /* * */
 
 /* professional-portfolio.html */
 
-#portfolio-img-app{
-	width:40%;
-	margin-top:150px;
-	float:block;
-	padding:5%;
-}
 
-#portfolio-img-wide{
-	width:50%;
-	margin-top:0%;
-	float:block;
-	padding:5%;
-}
-
-#img-caption-app{
-	margin-top:270px;
-	float:right;
-	width:35%;
-	padding:5%;
-	margin-right:5%;
-	text-align:justify;
-	display:none;
-}
-
-#swedish-game-link{
-	padding:0%;
-	margin:0%;
-}
-
-#img-caption-wordpress{
-	margin-top:50px;
-	float:right;
-	width:25%;
-	padding:5%;
-	margin-right:5%;
-	text-align:justify;
-	display:none;
-}
-
-#img-caption-swedish-game{
-	float:right;
-	width:25%;
-	margin-right:5%;
-	text-align:justify;
-	display:none;
-}
-
-#img-caption-swedish-game{
-	margin-top:50px;
-	float:right;
-	width:25%;
-	padding:5%;
-	margin-right:5%;
-	text-align:justify;
-	display:none;
-}
 
 /* * */
 
  /* about.html */
 .about-body{
-	margin-top:150px;
+	margin-top:5%;
 	margin-bottom:40px;
 	padding:0% 10% 0% 10%;
 	text-align:justify;
@@ -517,28 +210,23 @@ li{
 	margin-left:14%;
 }
 
+#profile-img{
+	width:150px;
+	height:150px;
+	float:right;
+	padding:0% 10% 0% 2%;
+	margin-top:5%;
+	border-radius:4px;
+}
+
 .blur{
-	webkit-filter: blur(2px); /* Chrome, Safari, Opera */
+	webkit-filter: blur(1px); /* Chrome, Safari, Opera */
     filter: blur(2px);
 }
 
 footer{
-	margin-top:30%;
 	font-size:14;
 	text-align:center;
 	width:100%;
-	position:relative;
-	float:left;
 	bottom:0;
-}
-
-.footer-left{
-	float:left;
-	padding:0;
-	margin:0;
-}
-
-.footer-right{
-	float:right;
-	padding:20px 20px 10px 0px;
 }

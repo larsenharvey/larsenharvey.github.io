@@ -9,16 +9,21 @@
 	<body>
 	<div class="container">
 		<section class="header">
-			<p class="big-header">About Me</p>
+			<div style="position: relative;">
+			    <div class="header-logo-div" onmouseover="hoverLogo(this)">
+			        <img src="images/lhlogo.png" id="header-logo">
+			    </div>
+			</div>
+			<p class="title">About Me</p>
 			<nav>
 				<a href="index.html" onmouseover="hoverHome(this)" 
 					onmouseout="mouseOff(this)">Home</a>
 				<a href="portfolio.html" onmouseover="hoverPortfolio(this)" 
 					onmouseout="mouseOff(this)">Portfolio</a>
-				<a href="aboutMe.html" onmouseover="hoverAbout(this)"
+				<a href="about.html" onmouseover="hoverAbout(this)"
 					onmouseout="mouseOff(this)"class="currentPg">About</a>
 				<a href="contact.html" onmouseover="hoverContact(this)"
-					onmouseout="mouseOff(this)">Contact</a>
+					onmouseout="mouseOff(this)" style="margin-right:0">Contact</a>
 			</nav>
 		</section>
 
@@ -26,7 +31,11 @@
 
 
 			<section>
-				<p class="about-body">I am a current Sophomore at Augustana College in Rock Island, Illinois. I am majoring in Computer Science and Graphic Design. I am primarily interested in any work that combine aspects of code and design, mainly web design/programming projects. I also have an interest in software programming and sofware design. Currently I am seeking computer science/graphic design internships in the Chicagoland area. I'm from Grayslake, so I'm also open to internships in the northwest Chicago suburbs.</p>
+				<p class="about-body">I am a junior at Augustana College, majoring in Graphic Design and Computer Science, and I am very passionate about these two fields. Currently, I am seeking creative internship opportunities involving web design and/or user interface design.
+				<br />
+				<br />
+				I have two years of experience with the Adobe suite - Photoshop, Illustrator, and InDesign, and I have recently learned prototyping app and web interfaces using Adobe XD. I am fluent in Java and C++, and I have worked for over a year with real world web projects where I have mastered HTML, CSS, and Javascript. I focus on design and simplicity in my work. I spent my time at my previous internship transforming a salon manager web service and creating a clean and uncomplicated layout solution. I have also worked on several rebranding projects for clients to increase online presence. In all my work, I bring a new, creative outlook to maximize users’ benefits. In addition, I am organized, a hard worker, and excellent at communicating with coworkers and superiors to solve the task at hand. 
+				</p>
 
 				<p class="skills"><b>My programming skills include:</b></p>
 				<ul>
@@ -34,7 +43,7 @@
 					<li>Javascript</li>
 					<li>C++</li>
 					<li>Java</li>
-					<li>AngularJS</li>
+					<li>PHP</li>
 					<li>Nativescript</li>
 				</ul>
 
@@ -42,15 +51,18 @@
 				<ul>
 					<li>Photoshop</li>
 					<li>Illustrator</li>
+					<li>Adobe XD</li>
 					<li>InDesign</li>
 					<li>Microsoft Office Suite</li>
 				</ul>
 			</section>
-		</div>
 
-		<footer>
+			<footer>
 				<p>Site created and designed by Larsen Harvey</p>
 			</footer>
+		</div>
+
+		
 
 			<script>
 				function hoverHome(link) {

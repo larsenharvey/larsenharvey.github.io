@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Portfolio</title>
+		<link href="../style.css" type="text/css" rel="stylesheet" />
+	</head>
+<body>
+<div class="container">
+		<section class="header">
+			<div style="position: relative;">
+				    <div class="header-logo-div" onmouseover="hoverLogo(this)">
+				        <img src="../images/lhlogo.png" id="header-logo">
+				    </div>
+				</div>
+			<p class="title">Student Portfolio</p>
+			<nav>
+				<a href="../index.html" onmouseover="hoverHome(this)" 
+					onmouseout="mouseOff(this)">Home</a>
+				<a href="../portfolio.html" onmouseover="hoverPortfolio(this)" 
+					onmouseout="mouseOff(this)" class="currentPg">Portfolio</a>
+				<a href="../about.html" onmouseover="hoverAbout(this)"
+					onmouseout="mouseOff(this)">About</a>
+				<a href="../contact.html" onmouseover="hoverContact(this)"
+					onmouseout="mouseOff(this)">Contact</a>
+			</nav>
+
+			<div style="display:inline-block;">
+				<div class="project-text-div">
+					<h2 style="margin-bottom:12px;">Aperol Poster</h2> 
+					<p style="margin-top:0px;" class="project-text">This is a product ad poster I made for Aperol, which is a liquor used in Aperol Spritz, a popular cocktail I experienced while studying abroad in Siena, Italy. I decided to go with a more retro feel for this poster, using simple colors and a watercolor appearance.</p></div>			
+				<img src="../images/aperol.png" class="project-image" style="padding-bottom:3%;">
+			</div>
+		</section>
+
+		<footer>
+			<p>Site created and designed by Larsen Harvey</p>
+		</footer>
+
+	</div>
+
+		<script>
+			function hoverLogo(link) {
+				document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #f2f2f2)';
+			}
+			function hoverHome(link) {
+				link.style.backgroundColor = "#ff9999";
+				document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #ff9999)';
+			}
+			function hoverPortfolio(link) {
+				link.style.backgroundColor = "#ffcc99";
+				document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #ffcc99)';
+			}
+			function hoverContact(link) {
+				link.style.backgroundColor = "#ccddff";
+				document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #ccddff)';
+			}
+			function hoverAbout(link) {
+				link.style.backgroundColor = "#b3e6cc";
+				document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #b3e6cc)';
+			}
+			function mouseOff(link) {
+				link.style.backgroundColor = "rgba(242, 242, 242, 0.3)";
+				link.style.background.opacity = "0.7";
+			}
+			</script>
+</body>
+</html>

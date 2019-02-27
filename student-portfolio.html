@@ -7,8 +7,12 @@
 <body>
 <div class="container">
 		<section class="header">
-			<p class="big-header">Student</p>
-			<p class="big-header2">Portfolio</p>
+			<div style="position: relative;">
+				    <div class="header-logo-div" onmouseover="hoverLogo(this)">
+				        <img src="images/lhlogo.png" id="header-logo">
+				    </div>
+				</div>
+			<p class="title">Student Portfolio</p>
 			<nav>
 				<a href="index.html" onmouseover="hoverHome(this)" 
 					onmouseout="mouseOff(this)">Home</a>
@@ -21,44 +25,112 @@
 			</nav>
 		</section>
 
-		<div id="hover-text">
-		<p>
-			HOVER OVER IMAGE TO UNCOVER
-		</p>
+	<div id="portfolio-work-center" style="text-align:center; padding-left:6%;">
+		<div class="portfolio-img-div">
+			<a href="projects/handyhardware.html">
+			<img src="images/hh-app.png" class="portfolio-img smaller" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Handy Hardware App Prototype</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/process-book.html">
+			<img src="images/processbook.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption><i>Nonsensical Typographica</i> Process Book</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/dawn.html">
+			<img src="images/dawn1.jpg" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Dawn Noir for Men</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/zine.html">
+			<img src="images/zine-preview.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption><i>Neue Typographie</i> Zine</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/aperol.html">
+			<img src="images/aperol.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Product Poster</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/bluffs.html">
+			<img src="images/bluffsmap.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>The Bluffs Map</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/psa-gif.html">
+			<img src="images/if_v2.gif" class="portfolio-img smaller" onmouseover="this.style.opacity=0.6;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Safe Sex PSA Gif Poster</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/hello-world.html">
+			<img src="images/helloWorldTitle.png" class="portfolio-img smaller" onmouseover="this.style.opacity=0.6;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption><i>Hello, World</i> Book</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/handyhardware.html">
+			<img src="images/hhlogo.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Handy Hardware Logo</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/mw-logo.html">
+			<img src="images/mw_logo.png" class="portfolio-img" onmouseover="this.style.opacity=0.6;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Mountain Warehouse Logo</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/animal-abstraction.html">
+			<img src="images/moose_square.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Animal Abstraction</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/VE.html">
+			<img src="images/logo1.png" class="portfolio-img" onmouseover="this.style.opacity=0.6; showDescLogo()" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>VE Logo</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/battle.html">
+			<img src="images/battle.gif" class="portfolio-img smaller" onmouseover="this.style.opacity=0.6;" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Gif Battle</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/translations.html">
+			<img src="images/cherry-cropped.png" class="portfolio-img" onmouseover="this.style.opacity=0.6; showDescCherry()" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Cherry Translation Poster</figcaption>
+		</div>
+
+		<div class="portfolio-img-div">
+			<a href="projects/alchemy.html">
+			<img src="images/photo-cropped.png" class="portfolio-img" onmouseover="this.style.opacity=0.6; showDescPhoto()" onmouseout="this.style.opacity=1">
+			</a>
+			<figcaption>Digital Photography Final</figcaption>
+		</div>
 	</div>
-
-		<div id="img-caption-logo">
-			<b><p>MARCH/APRIL 2018</p></b>
-			<p>These logos are from practicing with two different type faces to create a working and clean design that activates negative space. </p>
-		</div>
-		<div id="portfolio-img-logo">
-			<img src="images/logo1.png" onmouseover="this.style.opacity=0.6; showDescLogo()" 
-				onmouseout="this.style.opacity=1">
-		</div>
-
-		<div id="portfolio-img-logo2">
-			<img src="images/logo2.png" onmouseover="this.style.opacity=0.6; showDescLogo()" 
-				onmouseout="this.style.opacity=1">
-		</div>
-
-		<div id="img-caption-cherry">
-			<b><p>OCTOBER 2017</p></b>
-			<p>This poster is from an intro graphic design course where the objective was to take a well known shape (I chose a cherry) and translate it 16 times into various other objects and designs. </p>
-		</div>
-		<div id="portfolio-img-cherry">
-			<img src="images/poster-cherry.jpg" onmouseover="this.style.opacity=0.6; showDescCherry()" 
-				onmouseout="this.style.opacity=1">
-		</div>
-
-		<div id="img-caption-photo">
-			<b><p>JANUARY 2018</p></b>
-			<p>This is a photograph I took for a digital photography class where the guidelines given were to "make something out of nothing", ie. the "alchemy" assignment. 
-			</p>
-		</div>
-		<div id="portfolio-img-photo">
-			<img src="images/photo.jpg" onmouseover="this.style.opacity=0.6; showDescPhoto()" 
-				onmouseout="this.style.opacity=1">
-		</div>
 
 			<script>
 				var hoverText = document.getElementById("hover-text");
@@ -85,29 +157,38 @@
 					desc.style.display = "none";
 				}
 
+				function hoverLogo(link) {
+					document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #f2f2f2)';
+				}
+
 				function hoverHome(link) {
 					link.style.backgroundColor = "#ff9999";
+					document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #ff9999)';
 				}
 
 				function hoverPortfolio(link) {
-					link.style.backgroundColor = "#ccddff";
+					link.style.backgroundColor = "#ffcc99";
+					document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #ffcc99)';
 				}
 
 				function hoverContact(link) {
-					link.style.backgroundColor = "#ffcc99";
+					link.style.backgroundColor = "#ccddff";
+					document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #ccddff)';
 				}
 
 				function hoverAbout(link) {
 					link.style.backgroundColor = "#b3e6cc";
+					document.body.style.backgroundImage = 'linear-gradient(#f2f2f2, #b3e6cc)';
 				}
 
 				function mouseOff(link) {
-					link.style.backgroundColor = "#f2f2f2";
+					link.style.backgroundColor = "rgba(242, 242, 242, 0.3)";
+					link.style.background.opacity = "0.7";
 				}
 			</script>
 		</div>
 
-		<footer>
+		<footer style="padding-top:3%;">
 			<p>Site created and designed by Larsen Harvey</p>
 		</footer>
 </body>
