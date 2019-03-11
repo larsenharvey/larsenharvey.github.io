@@ -188,7 +188,17 @@ figcaption{
 
 /* professional-portfolio.html */
 
+@media screen and (max-width: 1050px) {
+    .project-text-div{
+    	font-size: 20px;
+    }
+}
 
+@media screen and (max-width: 675px) {
+    .project-text-div{
+    	font-size: 16px;
+    }
+}
 
 /* * */
 
