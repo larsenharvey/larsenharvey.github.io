@@ -49,7 +49,6 @@ a {
 nav a{
 	font-family: "Avenir Next", "Helvetica", sans-serif;
 	border:2px #262626 solid;
-	border-radius:3px;
 	color:#262626;
 	margin-right:4%;
 	padding:0.5% 1% 0.5% 1%;
@@ -197,6 +196,13 @@ figcaption{
 @media screen and (max-width: 675px) {
     .project-text-div{
     	font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #footer-portfolio{
+    	bottom:0;
+    	position:absolute;
     }
 }
 
