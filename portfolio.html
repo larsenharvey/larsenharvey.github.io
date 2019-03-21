@@ -12,18 +12,21 @@
 				    <div class="header-logo-div" onmouseover="hoverLogo(this)">
 				        <img src="images/lhlogo.png" id="header-logo">
 				    </div>
+				    <div class="nightmode-div">
+			    		<img src="images/nightmode.png" id="nightmode-icon" onclick="nightMode()">
+			    	</div>
 				</div>
 
 			<p class="title">Portfolio</p>
 			<nav>
 				<a href="index.html" onmouseover="hoverHome(this)" 
-					onmouseout="mouseOff(this)">Home</a>
+					onmouseout="mouseOff(this)" class="header-link" >Home</a>
 				<a href="portfolio.html" onmouseover="hoverPortfolio(this)" 
-					onmouseout="mouseOff(this)" class="currentPg">Portfolio</a>
+					onmouseout="mouseOff(this)" class="currentPg header-link">Portfolio</a>
 				<a href="about.html" onmouseover="hoverAbout(this)"
-					onmouseout="mouseOff(this)">About</a>
+					onmouseout="mouseOff(this)" class="header-link" >About</a>
 				<a href="contact.html" onmouseover="hoverContact(this)"
-					onmouseout="mouseOff(this)" style="margin-right:0">Contact</a>
+					onmouseout="mouseOff(this)" style="margin-right:0" class="header-link" >Contact</a>
 			</nav>
 
 			</section>
@@ -47,48 +50,7 @@
 			</div>
 
 		</div> <!-- end of container div -->
-	
-
-		<script>
-			var studentWork = document.getElementById("student-work");
-			var professionalWork = document.getElementById("professional-work");
-
-			function blurProfessional() {
-				professionalWork.classList.add("blur");
-			}
-
-			function blurStudent() {
-				studentWork.classList.add("blur");
-			}
-
-			function removeBlur() {
-				studentWork.classList.remove("blur");
-				professionalWork.classList.remove("blur");
-
-			}
-
-				function hoverHome(link) {
-					link.style.backgroundColor = "#ff9999";
-				}
-
-				function hoverPortfolio(link) {
-					link.style.backgroundColor = "#ffcc99";
-				}
-
-				function hoverContact(link) {
-					link.style.backgroundColor = "#ccddff";
-				}
-
-				function hoverAbout(link) {
-					link.style.backgroundColor = "#b3e6cc";
-				}
-
-				function mouseOff(link) {
-					link.style.backgroundColor = "#f2f2f2";
-					link.style.background.opacity = "0.7";
-				}
-
-		</script>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 		<footer id="footer-portfolio">
 			<p>Site created and designed by Larsen Harvey</p>

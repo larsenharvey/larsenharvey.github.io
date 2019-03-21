@@ -11,17 +11,20 @@
 				    <div class="header-logo-div" onmouseover="hoverLogo(this)">
 				        <img src="images/lhlogo.png" id="header-logo">
 				    </div>
+				    <div class="nightmode-div">
+			    		<img src="images/nightmode.png" id="nightmode-icon" onclick="nightMode()">
+			    	</div>
 				</div>
 			<p class="title">Student Portfolio</p>
 			<nav>
 				<a href="index.html" onmouseover="hoverHome(this)" 
-					onmouseout="mouseOff(this)">Home</a>
+					onmouseout="mouseOff(this)" class="header-link">Home</a>
 				<a href="portfolio.html" onmouseover="hoverPortfolio(this)" 
-					onmouseout="mouseOff(this)" class="currentPg">Portfolio</a>
+					onmouseout="mouseOff(this)" class="currentPg header-link">Portfolio</a>
 				<a href="about.html" onmouseover="hoverAbout(this)"
-					onmouseout="mouseOff(this)">About</a>
+					onmouseout="mouseOff(this)" class="header-link">About</a>
 				<a href="contact.html" onmouseover="hoverContact(this)"
-					onmouseout="mouseOff(this)">Contact</a>
+					onmouseout="mouseOff(this)" class="header-link">Contact</a>
 			</nav>
 		</section>
 
@@ -30,158 +33,112 @@
 			<a href="projects/handyhardware.html">
 			<img src="images/hh-app.png" class="portfolio-img smaller" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Handy Hardware App Prototype</figcaption>
+			<figcaption class="portfolio-caption">Handy Hardware App Prototype</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/process-book.html">
 			<img src="images/processbook.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption><i>Nonsensical Typographica</i> Process Book</figcaption>
+			<figcaption class="portfolio-caption"><i>Nonsensical Typographica</i> Process Book</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/dawn.html">
 			<img src="images/dawn1.jpg" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Dawn Noir for Men</figcaption>
+			<figcaption class="portfolio-caption">Dawn Noir for Men</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/zine.html">
 			<img src="images/zine-preview.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption><i>Neue Typographie</i> Zine</figcaption>
+			<figcaption class="portfolio-caption"><i>Neue Typographie</i> Zine</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/aperol.html">
 			<img src="images/aperol.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Product Poster</figcaption>
+			<figcaption class="portfolio-caption">Product Poster</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/bluffs.html">
 			<img src="images/bluffsmap.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>The Bluffs Map</figcaption>
+			<figcaption class="portfolio-caption">The Bluffs Map</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/psa-gif.html">
 			<img src="images/if_v2.gif" class="portfolio-img smaller" onmouseover="this.style.opacity=0.6;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Safe Sex PSA Gif Poster</figcaption>
+			<figcaption class="portfolio-caption">Safe Sex PSA Gif Poster</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/hello-world.html">
 			<img src="images/helloWorldTitle.png" class="portfolio-img smaller" onmouseover="this.style.opacity=0.6;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption><i>Hello, World</i> Book</figcaption>
+			<figcaption class="portfolio-caption"><i>Hello, World</i> Book</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/handyhardware.html">
 			<img src="images/hhlogo.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Handy Hardware Logo</figcaption>
+			<figcaption class="portfolio-caption">Handy Hardware Logo</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/mw-logo.html">
 			<img src="images/mw_logo.png" class="portfolio-img" onmouseover="this.style.opacity=0.6;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Mountain Warehouse Logo</figcaption>
+			<figcaption class="portfolio-caption">Mountain Warehouse Logo</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/animal-abstraction.html">
 			<img src="images/moose_square.png" class="portfolio-img" onmouseover="this.style.opacity=0.8;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Animal Abstraction</figcaption>
+			<figcaption class="portfolio-caption">Animal Abstraction</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/VE.html">
 			<img src="images/logo1.png" class="portfolio-img" onmouseover="this.style.opacity=0.6; showDescLogo()" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>VE Logo</figcaption>
+			<figcaption class="portfolio-caption">VE Logo</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/battle.html">
 			<img src="images/battle.gif" class="portfolio-img smaller" onmouseover="this.style.opacity=0.6;" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Gif Battle</figcaption>
+			<figcaption class="portfolio-caption">Gif Battle</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/translations.html">
 			<img src="images/cherry-cropped.png" class="portfolio-img" onmouseover="this.style.opacity=0.6; showDescCherry()" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Cherry Translation Poster</figcaption>
+			<figcaption class="portfolio-caption">Cherry Translation Poster</figcaption>
 		</div>
 
 		<div class="portfolio-img-div">
 			<a href="projects/alchemy.html">
 			<img src="images/photo-cropped.png" class="portfolio-img" onmouseover="this.style.opacity=0.6; showDescPhoto()" onmouseout="this.style.opacity=1">
 			</a>
-			<figcaption>Digital Photography Final</figcaption>
+			<figcaption class="portfolio-caption">Digital Photography Final</figcaption>
 		</div>
 	</div>
-
-			<script>
-				var hoverText = document.getElementById("hover-text");
-
-				var descLogo1 = document.getElementById("img-caption-logo");
-				function showDescLogo() {
-					descLogo1.style.display = "block";
-					hoverText.style.opacity = 0;
-				}
-
-				var descCherry = document.getElementById("img-caption-cherry");
-				function showDescCherry() {
-					descCherry.style.display = "block"
-					hoverText.style.opacity = 0;
-				}
-
-				var descPhoto = document.getElementById("img-caption-photo");
-				function showDescPhoto() {
-					descPhoto.style.display = "block"
-					hoverText.style.opacity = 0;
-				}
-
-				function removeDescription() {
-					desc.style.display = "none";
-				}
-
-				function hoverHome(link) {
-					link.style.backgroundColor = "#ff9999";
-				}
-
-				function hoverPortfolio(link) {
-					link.style.backgroundColor = "#ffcc99";
-				}
-
-				function hoverContact(link) {
-					link.style.backgroundColor = "#ccddff";
-				}
-
-				function hoverAbout(link) {
-					link.style.backgroundColor = "#b3e6cc";
-				}
-
-				function mouseOff(link) {
-					link.style.backgroundColor = "rgba(242, 242, 242, 0.3)";
-					link.style.background.opacity = "0.7";
-				}
-			</script>
 		</div>
 
 		<footer style="padding-top:3%;">
 			<p>Site created and designed by Larsen Harvey</p>
 		</footer>
 </body>
+	<script type="text/javascript" src="script.js"></script>
 </html>

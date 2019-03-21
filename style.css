@@ -17,10 +17,23 @@ body{
 	float:left;
 }
 
+#nightmode-icon{
+	float:right;
+	width:50px;
+	padding:1%;
+}
+
 .header-logo-div{
 	top:15px;
 	left:15px;
 	position:absolute;
+	opacity:0.9;
+}
+
+.nightmode-div{
+	position:absolute;
+	right:15px;
+	top:15px;
 	opacity:0.9;
 }
 
@@ -53,6 +66,14 @@ nav a{
 	margin-right:4%;
 	padding:0.5% 1% 0.5% 1%;
 }
+
+/*.header-link{
+	font-family: "Avenir Next", "Helvetica", sans-serif;
+	border:2px #262626 solid;
+	color:#262626;
+	margin-right:4%;
+	padding:0.5% 1% 0.5% 1%;
+}*/
 
 .currentPg{
 	font-weight:600;
