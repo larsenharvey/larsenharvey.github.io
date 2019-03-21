@@ -9,7 +9,7 @@ var REG_FONT			= '#282828';
 function nightMode() {
 	nightModeOn = !nightModeOn;
 	if (nightModeOn) {
-		document.getElementById("nightmode-icon").src = "images/nightmode2.png";
+		document.getElementById("nightmode-icon").src = "images/nightMode2.png";
 		document.getElementById("header-logo").src = "images/lhlogo_nightmode.png";
 		document.body.style.backgroundImage = 'linear-gradient(#404040, #404040)';
 		document.body.style.backgroundColor = NIGHT_MODE_COLOR;
