@@ -6,6 +6,7 @@ body{
 	color:#262626;
 	background-color: #f2f2f2;
 	background-repeat: no-repeat;
+	min-height:100%;
 	/*background-image: url(images/home-img.png);
 	background-position: left bottom;
 	background-repeat: no-repeat;*/
