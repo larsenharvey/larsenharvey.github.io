@@ -8,32 +8,31 @@
 <div class="container">
 		<section class="header">
 			<div style="position: relative;">
-				    <div class="header-logo-div" onmouseover="hoverLogo(this)">
-				        <img src="../images/lhlogo.png" id="header-logo">
-				    </div>
+				<div class="header-logo-div" onmouseover="hoverLogo(this)">
+				    <img src="../images/lhlogo.png" id="header-logo">
 				</div>
-			<p class="title">Student Portfolio</p>
+
+			</div>
 			<nav>
-				<a href="../index.html" onmouseover="hoverHome(this)" 
-					onmouseout="mouseOff(this)">Home</a>
-				<a href="../portfolio.html" onmouseover="hoverPortfolio(this)" 
-					onmouseout="mouseOff(this)" class="currentPg">Portfolio</a>
-				<a href="../about.html" onmouseover="hoverAbout(this)"
-					onmouseout="mouseOff(this)">About</a>
-				<a href="../contact.html" onmouseover="hoverContact(this)"
-					onmouseout="mouseOff(this)">Contact</a>
+				<div id="nav-div">
+					<a href="../index.html#about" id="about-nav" class="header-link">About</a>
+					<a href="../index.html#skills" id="skills-nav" class="header-link">Skills</a>
+					<a href="../index.html#work" id="work-nav" class="header-link">Work</a>
+					<a href="../index.html#contact" id="contact-nav" class="header-link">Contact</a>
+				</div>
 			</nav>
 
-			<div style="display:inline-block;">
+			<div class="portfolio-content">
 				<div class="project-text-div">
 					<h2 style="margin-bottom:12px;">Aperol Poster</h2> 
 					<p style="margin-top:0px;" class="project-text">This is a product ad poster I made for Aperol, which is a liquor used in Aperol Spritz, a popular cocktail I experienced while studying abroad in Siena, Italy. I decided to go with a more retro feel for this poster, using simple colors and a watercolor appearance.</p></div>			
-				<img src="../images/aperol.png" class="project-image" style="padding-bottom:3%;">
+				<img src="../images/aperol.png" class="project-image no-border">
 			</div>
 		</section>
 
-		<footer>
-			<p>Site created and designed by Larsen Harvey</p>
+		<footer id="bottom-content">
+			Site designed and developed by Larsen Harvey
+			<p id="footer-line2">© 2019</p>
 		</footer>
 
 	</div>

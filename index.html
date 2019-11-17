@@ -9,7 +9,6 @@
 	<body>
 		<div class="flex-wrapper">
 		<div class="container">
-			
 			<section class="header">
 				<div style="position: relative;">
 				    <div class="header-logo-div" onmouseover="hoverLogo(this)">
@@ -21,41 +20,187 @@
 			    	</div>
 
 				</div>
-				<p class="title">Larsen Harvey's Portfolio Website</p>
-
 				<nav>
-				<a href="index.html" onmouseover="hoverHomeGradient(this)" 
-					onmouseout="mouseOffGradient(this)" class="currentPg header-link">Home</a>
-				<a href="portfolio.html" onmouseover="hoverPortfolioGradient(this)" 
-					onmouseout="mouseOffGradient(this)" class="header-link">Portfolio</a>
-				<a href="about.html" onmouseover="hoverAboutGradient(this)"
-					onmouseout="mouseOffGradient(this)" class="header-link">About</a>
-				<a href="contact.html" onmouseover="hoverContactGradient(this)"
-					onmouseout="mouseOffGradient(this)" style="margin-right:0" class="header-link">Contact</a>
+					<div id="nav-div">
+						<a href="#about" id="about-nav" class="header-link">About</a>
+						<a href="#skills" id="skills-nav" class="header-link">Skills</a>
+						<a href="#work" id="work-nav" class="header-link">Work</a>
+						<a href="#contact" id="contact-nav" class="header-link">Contact</a>
+					</div>
 				</nav>
 
+				<div id="main-title">
+					<h1 class="primary-title">Hi, I'm Larsen</h1>
+					<h2 class="secondary-title">UI Designer & Developer</h2>
+				</div>
+
+				<div style="text-align:center; padding-top:8%">
+					<a href="#work" id="see-more-btn" style="font-weight:300">See my work</a>
+				</div>
+
+				<div style="padding-top:60vh"></div> <!-- padding between elements -->
+				<a id="about"></a>
+				<div></div> <!-- additional padding for nav -->
+
+				<div id="about-content">
+					<a name="about"></a>
+					<div id="about-div">
+						<h2 class="secondary-title about-title">About Me</h2>
+						<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum ante eros, non rhoncus ligula consectetur eget. Phasellus vel maximus erat, vitae cursus magna.</p>
+					</div>
+					<div id="experience-div">
+						<h2 class="secondary-title about-title">Experience</h2>
+						<p class="about-text">Pellentesque nunc sapien, eleifend quis metus eget, vulputate pharetra nibh. Nulla facilisi. Nullam ultrices eget orci sit amet iaculis. Etiam augue magna, condimentum ut urna vel, porta venenatis felis. Mauris finibus bibendum blandit.</p>
+					</div>
+				</div>
+
+
+				<div style="padding-top:30vh"></div> <!-- padding between elements -->
+				<a id="skills"></a>
+				<div style="padding-top:8vh"></div> <!-- additional padding for nav -->
+				
+				<div style="display:inline-block; width:5vw;">
+					<h2 id="skills-title">Skills</h2>
+				</div>
+				<div id="skills-content" style="text-align:center">
+					<div id="skills-buttons-div">
+						<div onclick="activateDesign()" id="design-btn-div">
+							<a id="design-button" class="secondary-title inline-block skills-active">Design</a>
+						</div>
+						<h2 class="secondary-title inline-block skills-inactive-slash" id="slash">&emsp;/&emsp;</h2>
+						<div onclick="activateDevelopment()" id="dev-btn-div">
+							<a id="development-button" class="secondary-title inline-block skills-inactive">Development</a>
+						</div>
+					</div>
+					<div class="skills-icon-div" id="design-skills-icons">
+						<div class="skill-icon">
+							<img src="images/skills/design/photoshop.png">
+							<figcaption>Photoshop</figcaption>
+						</div>
+						<div class="skill-icon">
+							<img src="images/skills/design/illustrator.png">
+							<figcaption>Illustrator</figcaption>
+						</div>
+						<div class="skill-icon">
+							<img src="images/skills/design/indesign.png">
+							<figcaption>Indesign</figcaption>
+						</div>
+						<br />
+						<div class="skill-icon">
+							<img src="images/skills/design/xd.png">
+							<figcaption>Adobe XD</figcaption>
+						</div>
+						<div class="skill-icon">
+							<img src="images/skills/design/sketch.png">
+							<figcaption>Sketch</figcaption>
+						</div>
+					</div>
+
+					<div class="skills-icon-div" id="development-skills-icons">
+						<div class="skill-icon">
+							<img src="images/skills/development/html.svg">
+							<figcaption>HTML5</figcaption>
+						</div>
+						<div class="skill-icon">
+							<img src="images/skills/development/css.svg">
+							<figcaption>CSS</figcaption>
+						</div>
+						<div class="skill-icon">
+							<img src="images/skills/development/js.svg">
+							<figcaption>JavaScript</figcaption>
+						</div>
+						<br />
+						<div class="skill-icon">
+							<img src="images/skills/development/java.png">
+							<figcaption>Java</figcaption>
+						</div>
+						<div class="skill-icon">
+							<img src="images/skills/development/react.svg">
+							<figcaption>ReactJS</figcaption>
+						</div>
+					</div>
+				</div>
+
+				<div style="padding-top:10vh"></div> <!-- padding between elements -->
+					<a id="work"></a>
+				<div style="padding-top:8vh"></div> <!-- additional padding for nav -->
+				
+				<div id="work-content" style="text-align:center">
+					<h2 class="secondary-title" id="work-title">Work</h2>
+				</div>
+				<div style="margin-top:10vh"></div>
+				<div id="work-imgs-div">
+					<a href="projects/handyhardware.html">
+						<img class="work-icon phone-icon" src="images/work-icons/handyhardware-icon.png">
+					</a>
+					<a href="projects/web-mockups.html">
+						<img class="work-icon web-icon" src="images/work-icons/dds-icon.png">
+					</a>
+					<a href="projects/process-book.html">
+						<img class="work-icon book-icon" src="images/work-icons/processbook-icon.png">
+					</a>
+					<a href="projects/hello-world.html">
+						<img class="work-icon book-icon" src="images/work-icons/helloworld-icon.png">
+					</a>
+					<a href="projects/aperol.html">
+						<img class="work-icon poster-icon" src="images/work-icons/aperol-icon.png">
+					</a>
+					<a href="projects/wienerschnitzel.html">
+						<img class="work-icon phone-icon" src="images/work-icons/wienerschnitzel-icon.png">
+					</a>
+					<a href="projects/zine.html">
+						<img class="work-icon book-icon" src="images/work-icons/zine-icon.png">
+					</a>
+				</div>
+
+				<div style="padding-top:30vh"></div> <!-- padding between elements -->
+					<a id="contact"></a>
+				<div style="padding-top:8vh"></div> <!-- additional padding for nav -->
+
+				<div id="contact-content">
+					<h2 class="secondary-title" id="contact-title">Get in Touch</h2>
+				</div>
+
+				<div id="form-div">
+					<form action="/action_page.php">
+				    <input type="text" id="contact-name" name="name" placeholder="Name">
+				    <input type="text" id="contact-email" name="email" placeholder="Email">
+				    <input type="text" id="contact-phone" name="phone" placeholder="Phone">
+				    <textarea id="contact-message" name="message" placeholder="Message" style="height:200px"></textarea>
+				    <br />
+				    <input type="submit" value="Submit">
+				  	</form>
+				</div>
 				
 
+				<div id="bottom-content">
+					Site designed and developed by Larsen Harvey
+					<p id="footer-line2">© 2019</p>
+				</div>
 			</section><!-- end of main-content section-->
-			<!--<div class="home-image">
-				<img src="images/home-img.png"></img>-->
-				<!--<picture>
-					<source srcset="home-image480px.png" media="(max-width:481px)">
-					<source srcset="home-image.png">
-  					<img src="home-image.png" alt="home image">
-				</picture>
-			-->
 			</div>
 
 		
 
 		</div> <!--end container div-->	
 
-
 		<script type="text/javascript" src="script.js"></script>
 	</body>
-	<footer id="home-footer" style="text-align:center;">
-		<img src="images/city-footer.png">
+	<footer id="home-footer" style="text-align:right;">
+		<div id="footer-images">
+			<a class="footer-img" href="mailto:larsen.harvey@gmail.com" target="_blank" alt="My email: larsen.harvey@gmail.com">
+			<div class="mail-container"></div>
+			</a>
+			<a class="footer-img" href="https://linkedin.com/in/larsenharvey" target="_blank" alt="linkedIn: linkedin.com/in/larsenharvey">
+				<div class="linkedin-container"></div>
+			</a>
+			<a class="footer-img" href="https://github.com/larsenharvey" target="_blank" alt="Github: github.com/larsenharvey">
+				<div class="github-container"></div>
+			</a>
+			<a class="footer-img" href="https://angel.co/larsenharvey" target="_blank" alt="angellist: angel.co/larsenharvey">
+				<div class="angellist-container"></div>
+			</a>	
+		</div>
 	</footer>
 </div>
 

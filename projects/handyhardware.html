@@ -8,35 +8,34 @@
 <div class="container">
 		<section class="header">
 			<div style="position: relative;">
-				    <div class="header-logo-div" onmouseover="hoverLogo(this)">
-				        <img src="../images/lhlogo.png" id="header-logo">
-				    </div>
-				</div>
-			<p class="title">Student Portfolio</p>
+				<div class="header-logo-div" onmouseover="hoverLogo(this)">
+			        <img src="../images/lhlogo.png" id="header-logo">
+			    </div>
+			</div>
+
 			<nav>
-				<a href="../index.html" onmouseover="hoverHome(this)" 
-					onmouseout="mouseOff(this)">Home</a>
-				<a href="../portfolio.html" onmouseover="hoverPortfolio(this)" 
-					onmouseout="mouseOff(this)" class="currentPg">Portfolio</a>
-				<a href="../about.html" onmouseover="hoverAbout(this)"
-					onmouseout="mouseOff(this)">About</a>
-				<a href="../contact.html" onmouseover="hoverContact(this)"
-					onmouseout="mouseOff(this)">Contact</a>
+				<div id="nav-div">
+					<a href="../index.html#about" id="about-nav" class="header-link">About</a>
+					<a href="../index.html#skills" id="skills-nav" class="header-link">Skills</a>
+					<a href="../index.html#work" id="work-nav" class="header-link">Work</a>
+					<a href="../index.html#contact" id="contact-nav" class="header-link">Contact</a>
+				</div>
 			</nav>
 
-			<div style="display:inline-block;">
+			<div class="portfolio-content">
 				<div class="project-text-div">
-					<h2 style="margin-bottom:12px;">Rebranding - Handy Hardware</h2> 
+					<h2>Rebranding - Handy Hardware</h2> 
 					<p style="margin-top:0px;" class="project-text">This is a rebranding project for a local hardware store in Rock Island, Illinois. The goals for this project were to create a new and improved logo (the previous logo can be found <a href="https://ww3.truevalue.com/justaskhandy/Home/tabid/2565/mo/1/Default.aspx">here</a>, and to have the hardware store appeal to a younger generation. To do this, I mocked up an app concept for this hardware store, using Adobe XD. The full interactive prototype can be found <a href="https://xd.adobe.com/view/df8d30b9-93b0-4bb4-6b5f-d266f473f9de-a9bc/?hints=off">here</a>.</p></div>
 				<img src="../images/hhlogos.png" class="project-image">
 				<img src="../images/app1.png" class="project-image">
 				<img src="../images/app2.png" class="project-image">				
-				<img src="../images/app3.png" class="project-image" style="padding-bottom:3%;">
+				<img src="../images/app3.png" class="project-image" style="margin-bottom:3%;">
 			</div>
 		</section>
 
 		<footer>
-			<p>Site created and designed by Larsen Harvey</p>
+			Site designed and developed by Larsen Harvey
+			<p id="footer-line2">© 2019</p>
 		</footer>
 
 	</div>
