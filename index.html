@@ -3,10 +3,91 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" 
 			name="viewport" content="width=device-width"/>
 		<title>Larsen Harvey's Site</title>
-		<link href="style.css" type="text/css" rel="stylesheet" />
+	    <!-- Bootstrap -->
+	    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	    <!-- Parallax Styles -->
+	    <!-- <link rel="stylesheet" type="text/css" href="css/parallax.css"> -->
+	    <link href="style.css" type="text/css" rel="stylesheet" />
+
 	</head>
 	
 	<body>
+		<div class="grid">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-md-offset-1 col-md-2">
+	            <div class="grid-line"></div>
+	          </div>
+	          <div class="col-md-2">
+	            <div class="grid-line"></div>
+	          </div>
+	          <div class="col-md-2">
+	            <div class="grid-line"></div>
+	          </div>
+	          <div class="col-md-2">
+	            <div class="grid-line"></div>
+	          </div>
+	          <div class="col-md-2">
+	            <div class="grid-line" style="margin-right:-30px;border-right:1px solid #ccc"></div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="fixed-top rellax" data-rellax-speed="-2"
+	      style="transform: rotate(45deg);"
+	    >
+	    </div>
+
+	    
+	    <main class="main">
+	      <section>
+
+	        <div class="absolute above">
+	          <div class="container">
+	            <div class="row">
+
+	              <div class="col-md-offset-1 col-md-2">
+	                <div class="lg-green rellax"
+	                  data-rellax-speed="2"
+	                  style="transform: rotate(45deg);">
+	                </div>
+	                <div class="sm-green rellax"
+	                  data-rellax-speed="5"
+	                  style="transform: rotate(45deg);">
+	                </div>
+	              </div>
+
+	              <div class="col-md-offset-2 col-md-1">
+	                <div class="sm-purple rellax"
+	                  data-rellax-speed="2"
+	                  style="transform: rotate(45deg);">
+	                </div>
+	              </div>
+
+	              <div class="col-md-offset-3 col-md-1">
+	                <div class="xs-green rellax"
+	                  data-rellax-speed="5"
+	                  style="transform: rotate(45deg);">
+	                </div>
+	                <div class="md-green rellax"
+	                  data-rellax-speed="1"
+	                  style="transform: rotate(45deg);">
+	                </div>
+	              </div>
+
+	              <div class="col-md-1">
+	                <div class="lg-purple rellax"
+	                  data-rellax-speed="3"
+	                  style="transform: rotate(45deg);">
+	                </div>
+	              </div>
+
+	            </div>
+	          </div>
+	        </div>
+	      </section>
+
 		<div class="flex-wrapper">
 		<div class="container">
 			<section class="header">
@@ -40,7 +121,7 @@
 
 				<div style="padding-top:60vh"></div> <!-- padding between elements -->
 				<a id="about"></a>
-				<div></div> <!-- additional padding for nav -->
+				<div style="padding-top:8vh"></div> <!-- additional padding for nav -->
 
 				<div id="about-content">
 					<a name="about"></a>
@@ -55,9 +136,9 @@
 				</div>
 
 
-				<div style="padding-top:30vh"></div> <!-- padding between elements -->
+				<div style="padding-top:50vh"></div> <!-- padding between elements -->
 				<a id="skills"></a>
-				<div style="padding-top:8vh"></div> <!-- additional padding for nav -->
+				<div style="padding-top:12vh"></div> <!-- additional padding for nav -->
 				
 				<div style="display:inline-block; width:5vw;">
 					<h2 id="skills-title">Skills</h2>
@@ -121,9 +202,9 @@
 					</div>
 				</div>
 
-				<div style="padding-top:10vh"></div> <!-- padding between elements -->
+				<div style="padding-top:20vh"></div> <!-- padding between elements -->
 					<a id="work"></a>
-				<div style="padding-top:8vh"></div> <!-- additional padding for nav -->
+				<div style="padding-top:14vh"></div> <!-- additional padding for nav -->
 				
 				<div id="work-content" style="text-align:center">
 					<h2 class="secondary-title" id="work-title">Work</h2>
@@ -155,7 +236,7 @@
 
 				<div style="padding-top:30vh"></div> <!-- padding between elements -->
 					<a id="contact"></a>
-				<div style="padding-top:8vh"></div> <!-- additional padding for nav -->
+				<div style="padding-top:14vh"></div> <!-- additional padding for nav -->
 
 				<div id="contact-content">
 					<h2 class="secondary-title" id="contact-title">Get in Touch</h2>
@@ -183,8 +264,8 @@
 		
 
 		</div> <!--end container div-->	
+	</main>
 
-		<script type="text/javascript" src="script.js"></script>
 	</body>
 	<footer id="home-footer" style="text-align:right;">
 		<div id="footer-images">
@@ -203,5 +284,19 @@
 		</div>
 	</footer>
 </div>
+
+
+    <!-- javascript -->
+<script type="text/javascript" src="rellax.js"></script>
+<script>
+	var rellax = new Rellax('.rellax', {
+    // center: true
+    callback: function(position) {
+        // callback every position change
+        console.log(position);
+    }
+  });
+</script>
+<script type="text/javascript" src="script.js"></script>
 
 </html>
