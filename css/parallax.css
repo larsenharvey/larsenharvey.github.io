@@ -14,19 +14,51 @@
   height: 100vh;
   border-left: 1px solid #ccc;
 }*/
-
-
+.col0{
+  margin-left:-5%;
+}
+.col1{
+  margin-left:10%;
+}
+.col2{
+  margin-left:20%;
+}
+.col3{
+  margin-left:30%;
+}
+.col4{
+  margin-left:40%;
+}
+.col5{
+  margin-left:50%;
+}
+.col6{
+  margin-left:60%;
+}
+.col7{
+  margin-left:70%;
+}
+.col8{
+  margin-left:80%;
+}
+.col9{
+  margin-left:90%;
+}
+.col10{
+  margin-left:100%;
+}
 
 
 .fixed-top {
   position: absolute;
-  width: 600px;
-  height: 600px;
-  background: #00F1C9;
+  width: 300;
+  height: 300;
+  background: #37669F;
   border-radius: 20px;
   z-index: -1;
-  margin-top: -220px;
-  margin-left: 100px;
+  margin-top: 550px;
+  margin-left: -150px;
+  opacity: 0.85;
 }
 
 
@@ -51,64 +83,79 @@ main,
   margin-top: 100px;
 }
 .absolute.above {
-  z-index: 2;
+  z-index: 0;
 }
-.lg-green {
+.lg-blue {
   width: 160px;
   height: 160px;
-  background: #00F1C9;
+  background: #37669F;
   border-radius: 12px;
   margin-left: -80px;
   margin-top: 200px;
+  opacity: 0.85;
 }
-.sm-green {
+.sm-blue {
   width: 60px;
   height: 60px;
-  background: #00F1C9;
+  background: #37669F;
   border-radius: 12px;
   margin-left: -30px;
   margin-top: 400px;
+  opacity: 0.85;
 }
-.sm-purple {
+.sm-pink {
   width: 60px;
   height: 60px;
-  background: #5000F1;
+  background: #ff6666;
   border-radius: 12px;
   margin-left: -30px;
   margin-top: 400px;
+  opacity: 0.85;
 }
-.xs-green {
+.xs-blue {
   width: 60px;
   height: 60px;
-  background: #00F1C9;
+  background: #37669F;
   border-radius: 12px;
   margin-left: -30px;
   margin-top: 400px;
+  opacity: 0.85;
 }
-.md-green {
+.md-blue {
   width: 120px;
   height: 120px;
-  background: #00F1C9;
+  background: #37669F;
   border-radius: 12px;
   margin-left: -60px;
   margin-top: 10px;
+  opacity: 0.85;
 }
-.lg-purple {
+.lg-pink {
   width: 80px;
   height: 80px;
-  background: #5000F1;
+  background: #ff6666;
   border-radius: 12px;
   margin-left: 57px;
   margin-top: 60px;
+  opacity: 0.85;
+}
+.xl-pink {
+  width: 120px;
+  height: 120px;
+  background: #ff6666;
+  border-radius: 12px;
+  margin-left: 57px;
+  margin-top: 60px;
+  opacity: 0.85;
 }
 
 
 
-span.purple {
-  color: #5000F1;
+span.pink {
+  color: #ff6666;
 }
-span.green {
-  color: #A0F100;
+span.blue {
+  color: #37669F;
 }
 span.white {
   color: #fff;
