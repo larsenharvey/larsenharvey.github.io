@@ -75,7 +75,7 @@ hr {
 	display:inline-block;
 	font-weight:500;
 	padding-left:16vw;
-	padding-top:5.2%;
+	padding-top:10vh;
 }
 
 .about-text{
@@ -86,8 +86,23 @@ hr {
 	font-size:2vw;
 }
 
+.experience-title{
+	display:inline-block;
+	font-weight:500;
+	padding-left:16vw;
+	padding-top:10vh;
+}
+
+.experience-text{
+	display:inline-block;
+	width:50vw;
+	margin-right:10vw;
+	float:right;
+	font-size:2vw;
+}
+
 #experience-div{
-	padding-top:20vh;
+	padding-top:22vh;
 }
 /* END ABOUT */
 
@@ -99,7 +114,7 @@ hr {
 	line-height:4.5vw;
 	float:left;
 	margin-left:10vw;
-	margin-top:8vw;
+	margin-top:14vh;
 	position:absolute;
 }
 
@@ -156,7 +171,7 @@ hr {
 }
 #work-imgs-div{
 	text-align:center;
-	margin-top:-4vw;
+	margin-top:-7.5vh;
 }
 .work-img-div{
 	text-align:center;
@@ -202,7 +217,6 @@ hr {
 }
 
 #form-div{
-	padding-top:5%; 
 	text-align:center;
 	margin: 0 10%;
 }

@@ -14,6 +14,18 @@
   height: 100vh;
   border-left: 1px solid #ccc;
 }*/
+@media only screen and (max-height:1600px) {
+  .large-screen-spacing{
+    margin-top:-150vh;
+  }
+}
+@media only screen and (max-height:800px) {
+  .large-screen-spacing{
+    margin-top:-200vh;
+  }
+}
+
+
 .col0{
   margin-left:-5%;
 }
@@ -86,66 +98,57 @@ main,
   z-index: 0;
 }
 .lg-blue {
-  width: 160px;
-  height: 160px;
+  width: 11vw;
+  height: 11vw;
   background: #37669F;
   border-radius: 12px;
   margin-left: -80px;
-  margin-top: 200px;
+  margin-top: 25vh;
   opacity: 0.85;
 }
 .sm-blue {
-  width: 60px;
-  height: 60px;
+  width: 4.2vw;
+  height: 4.2vw;
   background: #37669F;
   border-radius: 12px;
   margin-left: -30px;
-  margin-top: 400px;
+  margin-top: 50vh;
   opacity: 0.85;
 }
 .sm-pink {
-  width: 60px;
-  height: 60px;
+  width: 4.2vw;
+  height: 4.2vw;
   background: #ff6666;
   border-radius: 12px;
   margin-left: -30px;
-  margin-top: 400px;
-  opacity: 0.85;
-}
-.xs-blue {
-  width: 60px;
-  height: 60px;
-  background: #37669F;
-  border-radius: 12px;
-  margin-left: -30px;
-  margin-top: 400px;
+  margin-top: 50vh;
   opacity: 0.85;
 }
 .md-blue {
-  width: 120px;
-  height: 120px;
+  width: 8.4vw;
+  height: 8.4vw;
   background: #37669F;
   border-radius: 12px;
   margin-left: -60px;
-  margin-top: 10px;
+  margin-top: 1.3vh;
   opacity: 0.85;
 }
 .lg-pink {
-  width: 80px;
-  height: 80px;
+  width: 5.5vw;
+  height: 5.5vw;
   background: #ff6666;
   border-radius: 12px;
   margin-left: 57px;
-  margin-top: 60px;
+  margin-top: 7.5vh;
   opacity: 0.85;
 }
 .xl-pink {
-  width: 120px;
-  height: 120px;
+  width: 8.4vw;
+  height: 8.4vw;
   background: #ff6666;
   border-radius: 12px;
   margin-left: 57px;
-  margin-top: 60px;
+  margin-top: 7.5vh;
   opacity: 0.85;
 }
 
