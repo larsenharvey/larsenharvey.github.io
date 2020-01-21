@@ -14,16 +14,22 @@
   height: 100vh;
   border-left: 1px solid #ccc;
 }*/
-@media only screen and (max-height:1600px) {
-  .large-screen-spacing{
-    margin-top:-150vh;
+@media only screen and (min-height:900px) {
+  .large-screen{
+    margin-top:-145vh !important;
+  }
+}
+@media only screen and (max-height:899px) {
+  .large-screen{
+    margin-top:-180vh !important;
   }
 }
 @media only screen and (max-height:800px) {
-  .large-screen-spacing{
-    margin-top:-200vh;
+  .large-screen{
+    margin-top:-240vh !important;
   }
 }
+
 
 
 .col0{

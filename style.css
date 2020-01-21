@@ -313,7 +313,7 @@ input[type=submit]:hover {
 /* END FOOTER */
 
 body{
-	font-family:Avenir, Helvetica, sans-serif;
+	font-family:'Avenir', Helvetica, sans-serif;
 	font-size:17px;
 	margin:0;
 	padding:0px;
@@ -363,7 +363,7 @@ nav {
 	font-size:21;
 	margin-top:-5px;
 	padding-top:1.5vh;
-	padding-bottom:1.5vh;
+	padding-bottom:1vh;
 	z-index:1;
 	background-color:#ffffff;
 	opacity: 0.90;
@@ -384,9 +384,10 @@ a {
 }
 
 nav a{
-	font-family: "Avenir Next", "Helvetica", sans-serif;
+	font-family: "Roboto", "Helvetica", sans-serif;
 	color:#4d4d4d;
-	margin-left:3vw;
+	margin-left:2.5vw;
+	font-weight:500;
 }
 
 nav a#about-nav:hover{
