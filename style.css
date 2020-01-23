@@ -328,18 +328,36 @@ body{
 	float:left;
 }
 
-#nightmode-icon{
-	float:right;
-	width:2.5vw;
-	padding:1%;
-}
-
 .header-logo-div{
-	top:5px;
 	left:15px;
 	position:fixed;
 	opacity:0.9;
 	z-index:2;
+}
+
+.back-arrow-container{
+	width:2.6vw;
+	height:2.6vw;
+	background: url(images/back-arrow-white.png) center center no-repeat;
+    background-size: contain;
+}
+
+.back-arrow-container:hover{
+	background: url(images/back-arrow.png) center center no-repeat;
+    background-size: contain;
+}
+
+.back-arrow-div{
+	position:fixed;
+	opacity:0.9;
+	z-index:2;
+	padding:1% 0 0 0.5%;
+}
+
+#nightmode-icon{
+	float:right;
+	width:2.5vw;
+	padding:1%;
 }
 
 .nightmode-div{
@@ -384,10 +402,9 @@ a {
 }
 
 nav a{
-	font-family: "Roboto", "Helvetica", sans-serif;
+	font-family: "Avenir", "Helvetica", sans-serif;
 	color:#4d4d4d;
 	margin-left:2.5vw;
-	font-weight:500;
 }
 
 nav a#about-nav:hover{
@@ -525,8 +542,9 @@ figcaption{
 .project-image{
 	width:50%;
 	border:1px solid #e8e8e8;
-	border-radius:5px;
-	margin-top:3%;
+	border-radius:10px;
+	margin-top:1%;
+	margin-bottom:2%;
 	margin-right:3%;
 	float:right;
 }
@@ -550,7 +568,7 @@ figcaption{
 
 .portfolio-content{
 	display:inline-block; 
-	padding-top:8%;
+	padding-top:5%;
 }
 
 /* * */
