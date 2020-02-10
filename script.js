@@ -252,3 +252,82 @@ function removeBlurs() {
 	linkedin.classList.remove("blur");
 	angellist.classList.remove("blur");
 }
+
+function filterWork(identifier) {
+	var allWork = document.getElementsByClassName('work-img-div');
+	var uiWork = document.getElementsByClassName('ui-filter');
+	var clientWork = document.getElementsByClassName('client-filter');
+	var studentWork = document.getElementsByClassName('student-filter');
+
+	var allBtn = document.getElementById('filter-all');
+	var uiBtn = document.getElementById('filter-ui');
+	var clientBtn = document.getElementById('filter-client');
+	var studentBtn = document.getElementById('filter-student');
+
+	if (identifier == "all") {
+		showWork(allWork);
+		removeClass('filter-btn-selected');
+		allBtn.classList.add('filter-btn-selected');
+	} else if (identifier == "ui") {
+		hideWork(allWork);
+		showWork(uiWork);
+		removeClass('filter-btn-selected');
+		uiBtn.classList.add('filter-btn-selected');
+	} else if (identifier == "client") {
+		hideWork(allWork);
+		showWork(clientWork);
+		removeClass('filter-btn-selected');
+		clientBtn.classList.add('filter-btn-selected');
+	} else if (identifier == "student") {
+		hideWork(allWork);
+		showWork(studentWork);
+		removeClass('filter-btn-selected');
+		studentBtn.classList.add('filter-btn-selected');
+	}
+}
+
+function removeClass(className) {
+	document.getElementById('filter-all').classList.remove(className);
+	document.getElementById('filter-ui').classList.remove(className);
+	document.getElementById('filter-client').classList.remove(className);
+	document.getElementById('filter-student').classList.remove(className);
+}
+
+function hideWork(classIdentifier){
+	for (var i = 0; i < classIdentifier.length; i++) {
+		classIdentifier[i].style.display = "none";
+	}
+}
+function showWork(classIdentifier){
+	for (var i = 0; i < classIdentifier.length; i++) {
+		classIdentifier[i].style.display = "inline-block";
+	}
+}
+
+/*SLIDESHOW*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}

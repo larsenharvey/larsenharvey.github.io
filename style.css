@@ -4,7 +4,7 @@ h1{
 }
 
 h2{
-	color: #595959;
+	color: #4d4d4d;
 	font-size:2.6vw !important;
 	margin-top:-1.5vw;
 }
@@ -137,6 +137,7 @@ hr {
 
 .skills-inactive, .skills-inactive-slash{
 	color: #BABABA;
+	transition:0.2s ease;
 }
 .skills-inactive:hover{
 	color: #e6e6e6;
@@ -161,6 +162,29 @@ hr {
 /* END SKILLS */
 
 /* WORK */
+#filter-buttons{
+	text-align:center;
+	padding-bottom:5%;
+}
+.filter-btn{
+	margin-left:2%;
+	font-size:1.6vw;
+	padding:5px 10px;
+	cursor:pointer;
+	user-select:none;
+}
+.filter-btn:hover{
+	transition:0.2s ease-in-out;
+	color:#a6a6a6;
+}
+.filter-btn-selected{
+	color:#ff6666;
+	border:0.1vw solid #ff6666;
+	cursor:default;
+}
+.filter-btn-selected:hover{
+	color:#ff6666;
+}
 #work-title{
 	font-weight:500;
 	font-size:4vw !important;
@@ -174,7 +198,6 @@ hr {
 	margin-top:-7.5vh;
 }
 .work-img-div{
-	text-align:center;
 	display:inline-block;
 	vertical-align: middle;
 	width:22vw;
@@ -182,6 +205,9 @@ hr {
 }
 .phone-icon{
 	width:11vw;
+}
+.phone-icon-lg{
+	width:12vw;
 }
 .web-icon{
 	width:22vw;
@@ -199,7 +225,7 @@ hr {
 }
 .work-icon:hover{
 	/*opacity:0.8;*/
-	transform: scale(1.2);
+	transform: scale(1.18);
 }
 
 
@@ -255,12 +281,12 @@ input[type=submit]:hover {
 /* BOTTOM CONTENT */
 #bottom-content{
 	text-align:center;
-	padding-top:20%;
-	font-size:1.4vw;
+	padding-top:10%;
+	font-size:1.2vw;
 }
 #footer-line2{
 	margin-top:0.75%;
-	font-size:1.5vw;
+	font-size:1.2vw;
 }
 /*END BOTTOM CONTENT */
 
@@ -270,40 +296,50 @@ input[type=submit]:hover {
 	width:3.25vw;
 	padding-bottom:1.25vh;
 }
-.mail-container, .linkedin-container, .github-container, .angellist-container {
+.mail-container, .linkedin-container, .github-container, .behance-container {
     width: 3.25vw;
   	height: 3.25vw;
-  	-webkit-transition: all .4s ease-in-out;
- 	-moz-transition: all .4s ease-in-out;
-  	transition: all .4s ease-in-out;
 }
 .mail-container {
-  	background: url(images/footer/mail-dark.png) center center no-repeat;
+  	background: url(images/footer/mail-light.png) center center no-repeat;
     background-size: contain;
 }
 .linkedin-container {
-  	background: url(images/footer/linkedin-dark.png) center center no-repeat;
+  	background: url(images/footer/linkedin-light.png) center center no-repeat;
     background-size: contain;
 }
 .github-container {
-  	background: url(images/footer/github-dark.png) center center no-repeat;
+  	background: url(images/footer/github-light.png) center center no-repeat;
     background-size: contain;
 }
-.angellist-container {
-  	background: url(images/footer/angel-dark.png) center center no-repeat;
+.behance-container {
+  	background: url(images/footer/behance-light.png) center center no-repeat;
     background-size: contain;
 }
 .mail-container:hover {
-  	background-image: url(images/footer/mail-light.png);
+  	background-image: url(images/footer/mail-dark.png);
+  	 -webkit-transition: all 0.2s ease-in-out;
+ 	-moz-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
 }
 .linkedin-container:hover {
-  	background-image: url(images/footer/linkedin-light.png);
+  	background-image: url(images/footer/linkedin-dark.png);
+  	-webkit-transition: all 0.2s ease-in-out;
+ 	-moz-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
+
 }
 .github-container:hover {
-  	background-image: url(images/footer/github-light.png);
+  	background-image: url(images/footer/github-dark.png);
+  	-webkit-transition: all 0.2s ease-in-out;
+ 	-moz-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
 }
-.angellist-container:hover {
-  	background-image: url(images/footer/angel-light.png);
+.behance-container:hover {
+  	background-image: url(images/footer/behance-dark.png);
+  	-webkit-transition: all 0.2s ease-in-out;
+ 	-moz-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
 }
 #home-footer{
 	position:fixed;
@@ -336,6 +372,7 @@ body{
 }
 
 .back-arrow-container{
+	transition: 0.8s ease;
 	width:2.6vw;
 	height:2.6vw;
 	background: url(images/back-arrow-white.png) center center no-repeat;
@@ -405,6 +442,8 @@ nav a{
 	font-family: "Avenir", "Helvetica", sans-serif;
 	color:#4d4d4d;
 	margin-left:2.5vw;
+	transition:0.2s ease;
+	font-size:17px;
 }
 
 nav a#about-nav:hover{
@@ -540,6 +579,17 @@ figcaption{
 }
 
 .project-image{
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width:50%;
+	/*border:1px solid #e8e8e8;*/
+	border-radius:10px;
+	margin-top:1%;
+	margin-bottom:2%;
+	margin-left:3%;
+	float:left;
+}
+
+.project-image-phone{
 	width:50%;
 	border:1px solid #e8e8e8;
 	border-radius:10px;
@@ -548,6 +598,7 @@ figcaption{
 	margin-right:3%;
 	float:right;
 }
+
 .no-border{
 	border:0;
 }
@@ -555,10 +606,27 @@ figcaption{
 .project-text-div{
 	font-size:24px;
 	width:40%;
-	float:left;
-	margin-left:3%;
+	float:right;
+	margin-left:57%;
 	margin-top:2%;
 	position:fixed;
+}
+
+.mobile-text{
+	font-size:2vw;
+	width:40%;
+	float:right;
+	margin-left:50vw;
+	margin-top:2%;
+	position:absolute;
+}
+
+.project-img-div{
+	font-size:24px;
+	width:30%;
+	float:right;
+	margin-left:3%;
+	margin-top:2%;
 }
 
 .project-text-div h2{
@@ -569,6 +637,13 @@ figcaption{
 .portfolio-content{
 	display:inline-block; 
 	padding-top:5%;
+}
+
+.app-animations{
+	display:inline-block;
+	width:100%;
+	padding-top:4%;
+	float:left;
 }
 
 /* * */
@@ -627,3 +702,106 @@ li{
 	webkit-filter: blur(1px); /* Chrome, Safari, Opera */
     filter: blur(2px);
 }
+
+/*SLIDESHOW*/
+.mySlides {
+	display: none;
+
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	bottom:10;
+	padding-left:10vw;
+	width:50vh;
+	float:left;
+	position: relative;
+}
+
+.mySlides img{
+	margin-left:3%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 2px 18px;
+  color: #454545;
+  font-weight: bold;
+  font-size: 3vw;
+  transition: 0.6s ease;
+  border-radius: 10px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -1vw;
+}
+.prev{
+	margin-left:-2vw;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Caption text */
+.slideshow-caption {
+  font-size: 1.7vw;
+  font-weight:500;
+  margin-top:-5%;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+.dot-div{
+	text-align:center;
+	margin-top:-5%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1vw;
+  width: 1vw;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*END SLIDESHOW*/
