@@ -76,18 +76,19 @@ hr {
 
 /* ABOUT */
 .about-title{
-	display:inline-block;
+	display:inline-block; 
+	position:absolute; 
+	margin-top:3.9vh; 
 	font-weight:500;
-	padding-left:16vw;
-	padding-top:10vh;
 }
 
 .about-text{
 	display:inline-block;
-	width:50vw;
-	margin-right:10vw;
-	float:right;
 	font-size:2vw;
+	font-weight:300;
+}
+.about-div{
+	margin:0 20%;
 }
 
 .experience-title{
@@ -116,10 +117,6 @@ hr {
 	font-size:4vw !important;
 	border-bottom:3px solid #ff6666;
 	line-height:4.5vw;
-	float:left;
-	margin-left:10vw;
-	margin-top:14vh;
-	position:absolute;
 }
 
 #skills-buttons-div{
@@ -171,23 +168,29 @@ hr {
 	padding-bottom:5%;
 }
 .filter-btn{
-	margin-left:2%;
+	margin-left:1.6%;
 	font-size:1.6vw;
-	padding:5px 10px;
+	padding:5px 14px;
+	border: 0.1vw solid #ff6666;
+	color:#ff6666;
+	border-radius:10px;
 	cursor:pointer;
 	user-select:none;
 }
 .filter-btn:hover{
 	transition:0.2s ease-in-out;
-	color:#a6a6a6;
+	color:#ffb3b3;
+	border:0.1vw solid #ffb3b3;
 }
 .filter-btn-selected{
-	color:#ff6666;
+	color:white;
+	background-color:#ff6666;
 	border:0.1vw solid #ff6666;
 	cursor:default;
 }
 .filter-btn-selected:hover{
-	color:#ff6666;
+	color:white;
+	border:0.1vw solid #ff6666;
 }
 #work-title{
 	font-weight:500;
@@ -433,37 +436,21 @@ a {
 }
 
 #nav-div{
-	padding-right:2vw;
 	text-align:right;
 }
 
 nav a{
 	font-family: "Avenir", "Helvetica", sans-serif;
 	color:#4d4d4d;
-	margin-left:2.5vw;
+	margin-right:2.5vw;
+	font-weight:400;
 	transition:0.2s ease;
-	font-size:17px;
+	font-size:18px;
 }
 
-nav a#about-nav:hover{
+nav a#about-nav:hover, nav a#skills-nav:hover, nav a#work-nav:hover, nav a#contact-nav:hover{
 	color:#ff6666;
 }
-nav a#skills-nav:hover{
-	color:#ffa64d;
-}
-nav a#work-nav:hover{
-	color:#66cc97;
-}
-nav a#contact-nav:hover{
-	color:#4d88ff;
-}
-/*.header-link{
-	font-family: "Avenir Next", "Helvetica", sans-serif;
-	border:2px #262626 solid;
-	color:#262626;
-	margin-right:4%;
-	padding:0.5% 1% 0.5% 1%;
-}*/
 
 .currentPg{
 	border-bottom:1.5px #999999 solid;
@@ -612,7 +599,7 @@ figcaption{
 }
 
 .mobile-text{
-	font-size:2vw;
+	font-size:1.8vw;
 	width:40%;
 	float:right;
 	margin-left:50vw;
@@ -709,17 +696,20 @@ li{
 }
 img {vertical-align: middle;}
 
+.app-image{
+	width:75%;
+	padding-bottom:12%;
+	padding-top:5%;
+}
+
 /* Slideshow container */
 .slideshow-container {
-	bottom:10;
 	padding-left:10vw;
 	width:50vh;
-	float:left;
-	position: relative;
+	text-align:center;
 }
 
 .mySlides img{
-	margin-left:3%;
 }
 
 /* Next & previous buttons */
@@ -727,32 +717,31 @@ img {vertical-align: middle;}
   cursor: pointer;
   position: absolute;
   top: 40%;
-  width: auto;
-  padding: 2px 18px;
+  /*width: auto;*/
+  /*padding: 2px 20px;*/
   color: #454545;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 3.5vw;
   transition: 0.6s ease;
-  border-radius: 10px;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: -1vw;
+	margin-left:14vw;
 }
 .prev{
-	margin-left:-2vw;
+	margin-left:-16vw;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.1);
+	color:#999999;
 }
 
 /* Caption text */
 .slideshow-caption {
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   font-weight:500;
   margin-top:-5%;
   width: 100%;
