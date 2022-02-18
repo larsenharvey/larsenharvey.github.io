@@ -51,6 +51,14 @@ hr {
 	font-weight:100;
 }
 
+#randomize-btn{
+	padding-left: 66%;
+	line-height: 0;
+	color: #eeeeee;
+	z-index: 99;
+	cursor: pointer;
+}
+
 #see-more-btn{
 	color:#ff6666;
 	font-size:1.5vw;
@@ -375,7 +383,7 @@ body{
 	left:15px;
 	position:fixed;
 	opacity:0.9;
-	z-index:2;
+	z-index:101;
 }
 .back-arrow{
 	text-decoration: none;
@@ -421,7 +429,7 @@ nav {
 	margin-top:-5px;
 	padding-top:1.5vh;
 	padding-bottom:1vh;
-	z-index:1;
+	z-index:100;
 	background-color:#ffffff;
 	opacity: 0.90;
 	border-bottom: 1px solid #DCDEE2;
