@@ -107,7 +107,7 @@ main,
 .lg-blue {
   width: 11vw;
   height: 11vw;
-  background: #37669F;
+  background: #e56b6f;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   margin-left: -80px;
@@ -117,7 +117,7 @@ main,
 .sm-blue {
   width: 4.2vw;
   height: 4.2vw;
-  background: #37669F;
+  background: #6d597a;
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   margin-left: -30px;
@@ -127,7 +127,7 @@ main,
 .sm-pink {
   width: 4.2vw;
   height: 4.2vw;
-  background: #ff6666;
+  background: #2a9d8f;
   border-radius: 12px;
   margin-left: -30px;
   margin-top: 50vh;
@@ -137,7 +137,7 @@ main,
 .md-blue {
   width: 8.4vw;
   height: 8.4vw;
-  background: #37669F;
+  background: #b56576;
   border-radius: 12px;
   margin-left: -60px;
   margin-top: 1.3vh;
@@ -147,7 +147,7 @@ main,
 .lg-pink {
   width: 5.5vw;
   height: 5.5vw;
-  background: #ff6666;
+  background: #f4a261;
   border-radius: 12px;
   margin-left: 57px;
   margin-top: 7.5vh;
@@ -157,7 +157,7 @@ main,
 .xl-pink {
   width: 8.4vw;
   height: 8.4vw;
-  background: #ff6666;
+  background: #2a9d8f;
   border-radius: 12px;
   margin-left: 57px;
   margin-top: 7.5vh;
@@ -168,10 +168,10 @@ main,
 
 
 span.pink {
-  color: #ff6666;
+  color: #e9c46a;
 }
 span.blue {
-  color: #37669F;
+  color: #e56b6f;
 }
 span.white {
   color: #fff;

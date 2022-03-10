@@ -273,6 +273,9 @@ input[type=text], textarea {
   	margin-top: 6px;
   	margin-bottom: 16px;
 }
+.input-field{
+	font-family: monospace;
+}
 
 input[type=submit] {
 	display:inline-block;
@@ -377,6 +380,11 @@ body{
 	width:45px;
 	height:45px;
 	float:left;
+	transition: 1s;
+}
+#header-logo:hover{
+	transform: rotate(360deg);
+	transition: 2s;
 }
 
 .header-logo-div{
@@ -458,6 +466,12 @@ nav a{
 
 nav a#about-nav:hover, nav a#skills-nav:hover, nav a#work-nav:hover, nav a#contact-nav:hover{
 	color:#ff6666;
+}
+nav a#resume-nav:hover{
+	color: #FFC300;
+}
+nav a#cb2-nav:hover{
+	color: #FFC300;
 }
 
 .currentPg{
